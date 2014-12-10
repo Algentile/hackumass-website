@@ -1,10 +1,14 @@
 {
   "core": {
     "css": {
-      "public/assets/build/dist.min.css": []
+      "public/assets/build/dist.min.css": [
+        "bower_components/foundation/css/foundation.css",
+        "bower_components/foundation/css/normalize.css"
+      ]
     },
     "js": {
       "public/assets/build/dist.min.js": [
+        "bower_components/foundation/js/foundation.min.js",
         "bower_components/jquery/dist/jquery.min.js",
         "bower_components/angular/angular.js"
       ]

@@ -97,5 +97,5 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['clean', 'jshint', 'csslint', 'cssmin', 'uglify', 'concurrent']);
+  grunt.registerTask('default', ['clean', 'copy', 'jshint', 'csslint', 'cssmin', 'uglify', 'concurrent']);
 };
