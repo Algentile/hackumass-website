@@ -1,0 +1,23 @@
+# --------------------
+# Node Files
+# --------------------
+.nodemonignore
+npm-debug.log
+node_modules/
+
+# --------------------
+# Bower Files
+# --------------------
+.bower-*/
+bower_components
+
+# --------------------
+# Build Files
+# --------------------
+public/assets/build
+public/assets/fonts
+
+# --------------------
+# Misc
+# --------------------
+Thumbs.db

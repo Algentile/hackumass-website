@@ -1,0 +1,10 @@
+{
+  "name": "hackumass-website",
+  "version": "1.0.0",
+  "dependencies": {
+    "angular": "latest",
+    "font-awesome": "~4.2.0",
+    "jquery": "2.1.x",
+    "normalize.css": "~3.0.2"
+  }
+}

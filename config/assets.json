@@ -1,0 +1,13 @@
+{
+  "core": {
+    "css": {
+      "public/assets/build/dist.min.css": []
+    },
+    "js": {
+      "public/assets/build/dist.min.js": [
+        "bower_components/jquery/dist/jquery.min.js",
+        "bower_components/angular/angular.js"
+      ]
+    }
+  }
+}
