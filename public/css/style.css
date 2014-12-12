@@ -1,0 +1,33 @@
+html, body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+section {
+  height: 100vh;
+  padding: 75px 50px;
+  background-color: #1A1A1A;
+  color: #fff;
+}
+
+.alternate {
+  background-color: #fff;
+  color: #1A1A1A;
+}
+.alternate h1, h2, h3, h4, h5, h6 {
+  color: #1A1A1A;
+}
+
+footer {
+  border-top: solid thick #D94B3F;
+  background-color: #1A1A1A;
+  height: 250px;
+}
+
+.logo {
+  height: 50vh;
+}

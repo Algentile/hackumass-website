@@ -2,8 +2,8 @@
   "core": {
     "css": {
       "public/assets/build/dist.min.css": [
-        "bower_components/foundation/css/foundation.css",
-        "bower_components/foundation/css/normalize.css"
+        "bower_components/foundation/css/normalize.css",
+        "bower_components/foundation/css/foundation.css"
       ]
     },
     "js": {
