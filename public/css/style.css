@@ -2,14 +2,21 @@ html, body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #fff;
+}
+h1 {
   text-transform: uppercase;
 }
 
 section {
   height: 100vh;
-  padding: 75px 50px;
+  padding: 50px 50px;
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -18,16 +25,26 @@ section {
   background-color: #fff;
   color: #1A1A1A;
 }
-.alternate h1, h2, h3, h4, h5, h6 {
+.alternate h1,
+.alternate h2,
+.alternate h3,
+.alternate h4,
+.alternate h5,
+.alternate h6 {
   color: #1A1A1A;
 }
 
 footer {
   border-top: solid thick #D94B3F;
   background-color: #1A1A1A;
+  color: #fff;
   height: 250px;
 }
 
 .logo {
   height: 50vh;
+}
+
+.social-media {
+  font-size: 3em;
 }
