@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node server.js",
-    "postinstall": "node node_modules/bower/bin/bower install; node node_modules/grunt-cli/bin/grunt cssmin uglify;"
+    "postinstall": "node node_modules/bower/bin/bower install; node node_modules/grunt-cli/bin/grunt clean copy cssmin uglify;"
   },
   "dependencies": {
     "bower": "latest",
