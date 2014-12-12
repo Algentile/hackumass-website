@@ -3,7 +3,7 @@
   <% include includes/head.ejs %>
   <body>
     <!--Landing-->
-    <section>
+    <section class="text-center">
       <!--Logo-->
       <div class="row">
         <img class="logo small-centered column" src="/assets/img/logo.svg" alt="HackUMass Logo">
@@ -15,20 +15,23 @@
       </div>
 
       <!--Headline-->
-      <div class="row text-center">
+      <div class="row headline">
         <div class="small-4 column">
-          <h2>500 Hackers</h2>
+          <span class="fa fa-users"></span>
+          <h3>500 Hackers</h3>
         </div>
         <div class="small-4 column">
-          <h2>36 Hours</h2>
+          <span class="fa fa-clock-o"></span>
+          <h3>36 Hours</h3>
         </div>
         <div class="small-4 column">
-          <h2>1 Stadium</h2>
+          <span class="fa fa-university"></span>
+          <h3>1 Venue</h3>
         </div>
       </div>
 
       <!--Email-->
-      <div class="row text-center">
+      <div class="row">
         <h4>Sign up for updates</h4>
         <form>
           <div class="row">
@@ -36,13 +39,13 @@
               <input type="text" placeholder="Email Address">
             </div>
           </div>
-          <button type="submit">Submit</button>
+          <button class="btn btn-1 btn-1f" type="submit">Submit</button>
         </form>
       </div>
     </section>
 
     <!--About-->
-    <section class="alternate">
+    <section class="alternate text-center">
       <h1 class="text-center">About</h1>
     </section>
 
@@ -52,14 +55,22 @@
     </section>
 
     <!--Sponsors-->
-    <section class="alternate">
-      <h1 class="text-center">Sponsors</h1>
+    <section class="alternate text-center">
+      <h1>Sponsors</h1>
+      <p>Coming Soon!</p>
     </section>
-    <footer>
+    <footer class="text-center">
       <div class="social-media">
-        <span class="fa fa-twitter"></span>
-        <span class="fa fa-facebook"></span>
+        <a href="https://www.facebook.com/hackUMass" target="_blank">
+          <span class="fa fa-facebook"></span>
+        </a>
+        <a href="https://twitter.com/hackumass" target="_blank">
+          <span class="fa fa-twitter"></span>
+        </a>
       </div>
+      <p>
+        Made by the HackUMass team with <span class="fa fa-heart"></span> and <span class="fa fa-coffee"></span>.
+      </p>
     </footer>
     <% include includes/foot.ejs %>
   </body>

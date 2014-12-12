@@ -14,6 +14,11 @@ h1 {
   text-transform: uppercase;
 }
 
+a, a:hover, a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 section {
   height: 100vh;
   padding: 50px 50px;
@@ -36,15 +41,63 @@ section {
 
 footer {
   border-top: solid thick #D94B3F;
+  padding: 30px 50px;
   background-color: #1A1A1A;
   color: #fff;
-  height: 250px;
+  height: 150px;
+}
+
+.headline {
+  margin-bottom: 25px;
 }
 
 .logo {
   height: 50vh;
 }
 
-.social-media {
+.fa {
   font-size: 3em;
+  -webkit-transition: color 0.5s ease;
+  -moz-transition: color 0.5s ease;
+  transition: color 0.5s ease;
+}
+
+.fa-coffee {
+  font-size: 1em;
+}
+
+.fa-heart {
+  font-size: 1em;
+  color: #D94B3F;
+}
+
+.social-media {
+  letter-spacing: 10px;
+  padding-bottom: 10px;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-twitter:hover {
+  color: #4099FF;
+}
+
+button {
+  border: 3px solid #fff;
+  background: none;
+  padding: 25px 50px;
+  display: inline-block;
+  margin: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+button:hover {
+  background-color: #D94B3F;
 }
