@@ -20,7 +20,6 @@ a, a:hover, a:visited {
 }
 
 section {
-  height: 100vh;
   padding: 50px 50px;
   background-color: #1A1A1A;
   color: #fff;
@@ -44,7 +43,11 @@ footer {
   padding: 30px 50px;
   background-color: #1A1A1A;
   color: #fff;
-  height: 150px;
+  height: 200px;
+}
+
+.landing {
+  height: 100vh;
 }
 
 .headline {
@@ -76,18 +79,47 @@ footer {
   padding-bottom: 10px;
 }
 
+.fa-facebook {
+  font-size: 60px;
+}
 .fa-facebook:hover {
   color: #3b5998;
 }
 
+.fa-twitter {
+  font-size: 60px;
+}
 .fa-twitter:hover {
   color: #4099FF;
+}
+
+.hex {
+  float: right;
+  margin-left: 3px;
+  margin-bottom: -26px;
+}
+.hex .top {
+  width: 0;
+  border-bottom: 30px solid #D94B3F;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+}
+.hex .middle {
+  width: 104px;
+  height: 60px;
+  background: #D94B3F;
+}
+.hex .bottom {
+  width: 0;
+  border-top: 30px solid #D94B3F;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
 }
 
 button {
   border: 3px solid #fff;
   background: none;
-  padding: 25px 50px;
+  padding: 15px 25px;
   display: inline-block;
   margin: 10px 30px;
   text-transform: uppercase;
