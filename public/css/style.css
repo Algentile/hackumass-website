@@ -14,7 +14,9 @@ h1 {
   text-transform: uppercase;
 }
 
-a, a:hover, a:visited {
+.unstyled-link,
+.unstyled-link:hover,
+.unstyled-link:visited {
   text-decoration: none;
   color: inherit;
 }
@@ -43,11 +45,10 @@ footer {
   padding: 30px 50px;
   background-color: #1A1A1A;
   color: #fff;
-  height: 200px;
 }
 
 .landing {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .headline {
@@ -74,20 +75,19 @@ footer {
   color: #D94B3F;
 }
 
+.panel-title {
+  width: 100%;
+  padding: 10px;
+  background-color: #D94B3F;
+}
+
 .social-media {
   letter-spacing: 10px;
   padding-bottom: 10px;
 }
 
-.fa-facebook {
-  font-size: 60px;
-}
 .fa-facebook:hover {
   color: #3b5998;
-}
-
-.fa-twitter {
-  font-size: 60px;
 }
 .fa-twitter:hover {
   color: #4099FF;
