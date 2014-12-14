@@ -18,6 +18,19 @@ h6 {
   color: #fff;
 }
 
+input[type="email"], input[type="email"]:focus {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #fff;
+    box-shadow: none;
+    text-align: center;
+    color: #fff;
+}
+input:focus::-webkit-input-placeholder {
+    color: transparent;
+}
+
+
 .unstyled-link,
 .unstyled-link:hover,
 .unstyled-link:visited {
@@ -26,7 +39,7 @@ h6 {
 }
 
 section {
-  padding: 2em 6em;
+  padding: 3em 9em;
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -72,8 +85,11 @@ footer {
 }
 
 .logo {
-  height: 50vh;
-  padding-bottom: 20px;
+  height: 35vh;
+}
+
+.countdown {
+  padding: 20px 0;
 }
 
 .fa {
@@ -133,7 +149,7 @@ footer {
   border-right: 52px solid transparent;
 }
 
-button {
+.button {
   border: 3px solid #fff;
   background: none;
   padding: 15px 25px;
@@ -147,6 +163,6 @@ button {
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-button:hover {
+.button:hover {
   background-color: #D94B3F;
 }
