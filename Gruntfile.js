@@ -11,7 +11,7 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     assets: grunt.file.readJSON('config/assets.json'),
-    clean: ['public/assets/build', 'public/assets/fonts'],
+    clean: ['public/assets/build', 'public/assets/fonts/fontawesome*', 'public/assets/fonts/FontAwesome.otf'],
     copy: {
       main: {
         expand: true,

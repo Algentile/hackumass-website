@@ -15,7 +15,8 @@ bower_components
 # Build Files
 # --------------------
 public/assets/build
-public/assets/fonts
+public/assets/fonts/fontawesome-*
+public/assets/fonts/FontAwesome.otf
 
 # --------------------
 # Misc
