@@ -1,8 +1,8 @@
 'use strict';
 
 var paths = {
-  js: ['!bower_components/**', '!public/js/build/**', '*.js', 'routes', 'public/js/*.js'],
-  css: ['!bower_components/**', '!public/css/build/**', 'public/css/*.css'],
+  js: ['!bower_components/**', '!public/assets/build/**','*.js', 'server/routes', 'public/*.js'],
+  css: ['!bower_components/**', '!public/assets/build/**', 'public/css/*.css'],
   html: ['server/views/**']
 };
 

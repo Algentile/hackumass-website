@@ -1,0 +1,42 @@
+<!--Landing-->
+<section class="landing text-center" ng-controller="LandingCtrl">
+  <!--Logo-->
+  <div class="row">
+    <img class="logo small-centered column" src="/assets/img/logo.svg" alt="HackUMass Logo">
+  </div>
+
+  <!--Countdown-->
+  <div class="countdown text-center">
+    <h2>{{date}}</h2>
+  </div>
+
+  <!--Headline-->
+  <div class="row headline">
+    <div class="small-4 column">
+      <span class="fa fa-users"></span>
+      <h4>500 Hackers</h4>
+    </div>
+    <div class="small-4 column">
+      <span class="fa fa-clock-o"></span>
+      <h4>36 Hours</h4>
+    </div>
+    <div class="small-4 column">
+      <span class="fa fa-university"></span>
+      <h4>1 Venue</h4>
+    </div>
+  </div>
+
+  <!--MailChimp Email-->
+  <div class="row">
+    <h5>Stay updated</h5>
+    <form action="//hackUMass.us3.list-manage.com/subscribe/post?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+      <div class="row">
+        <div class="small-6 small-centered column">
+          <input type="email" placeholder="all your email are belong to us" name="EMAIL" class="required email" id="mce-EMAIL">
+        </div>
+      </div>
+      <div style="position: absolute; left: -5000px;"><input type="text" name="b_916da75d92b720d21cf48bafe_74724eb3c2" tabindex="-1" value=""></div>
+      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </form>
+  </div>
+</section>

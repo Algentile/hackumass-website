@@ -1,109 +1,13 @@
 <!DOCTYPE html>
 <html>
   <% include includes/head.ejs %>
-  <body>
-    <!--Landing-->
-    <section class="landing text-center">
-      <!--Logo-->
-      <div class="row">
-        <img class="logo small-centered column" src="/assets/img/logo.svg" alt="HackUMass Logo">
-      </div>
+  <body ng-app="hackumass-website">
 
-      <!--Countdown-->
-      <div class="countdown text-center">
-        <h2>April 11th-12th, 2015</h2>
-      </div>
-
-      <!--Headline-->
-      <div class="row headline">
-        <div class="small-4 column">
-          <span class="fa fa-users"></span>
-          <h4>500 Hackers</h4>
-        </div>
-        <div class="small-4 column">
-          <span class="fa fa-clock-o"></span>
-          <h4>36 Hours</h4>
-        </div>
-        <div class="small-4 column">
-          <span class="fa fa-university"></span>
-          <h4>1 Venue</h4>
-        </div>
-      </div>
-
-      <!--MailChimp Email-->
-      <div class="row">
-        <h5>Stay updated</h5>
-        <form action="//hackUMass.us3.list-manage.com/subscribe/post?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-          <div class="row">
-            <div class="small-6 small-centered column">
-              <input type="email" placeholder="all your email are belong to us" name="EMAIL" class="required email" id="mce-EMAIL">
-            </div>
-          </div>
-          <div style="position: absolute; left: -5000px;"><input type="text" name="b_916da75d92b720d21cf48bafe_74724eb3c2" tabindex="-1" value=""></div>
-          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-        </form>
-      </div>
-    </section>
-
-    <!--About-->
-    <section class="alternate text-center">
-      <h1 class="text-center">About</h1>
-  	  <p>
-        HackUMass is an annual, student-run hackathon hosted at the University of Massachusetts,
-        Amherst. It is going to be the largest hackathon of the Pioneer Valley, attracting over 500 of the
-				most ambitious, talented, and creative hackers from all over the country to gather and build
-				innovative software and hardware products. We aim to create a supportive, collaborative, and
-				inclusive environment for all hackers no matter their background, gender, race, or sexuality.
-				HackUMass is an amazing opportunity for students to grow as developers, innovators, and
-				team players in order to bring dreams to reality.
-  		</p>
-  		<p>
-        HackUMass 2014 was founded by a small team of students with a big vision: hosting the
-  			Pioneer Valley&#39;s first intercollegiate embedded systems hackathon. We attracted students from
-  			UMass, Mt. Holyoke, Brown, and MIT, with registration for all 100 spots filling up in less than 2
-  			hours, leaving us with an extensive waitlist.
-  			After hacking, teams presented their projects to fellow participants, sponsors, professors, and
-  			the local community. All attendees agreed that our excellent event structure, food and snack
-  			choices, supportive environment, and the enthusiastic mentors sent over by our sponsors
-  			created an unforgettable hackathon experience.
-      </p>
-    </section>
-
-    <!--FAQ-->
-    <section class="text-center">
-      <h1>FAQ</h1>
-      <div class="row">
-        <div class="small-6 column">
-          <div class="panel-title">
-            Where is it?
-          </div>
-          <div class="panel">
-            <p>
-              HackUMass 2015 will take place at the Mullins Center, the biggest and most popular indoors venue on campus, with ample space and parking.
-            </p>
-          </div>
-        </div>
-        <div class="small-6 column">
-          <div class="panel-title">
-            Who's coming?
-          </div>
-          <div class="panel">
-            <p>
-              We expect over 500 hackers from across the US to attend our Hackathon, with most attendees arriving from Boston, Worcester, New York City, Providence, Connecticut, and Albany.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!--Sponsors-->
-    <section class="alternate text-center">
-      <h1>Sponsors</h1>
-		  <p>
-        Interested in sponsoring HackUMass? Email us at 
-        <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>.
-      </p>
-	  </section>
+    <!--Load in all sections here-->
+    <% include partials/landing.ejs %>
+    <% include partials/about.ejs %>
+    <% include partials/faq.ejs %>
+    <% include partials/sponsors.ejs %>
 
     <footer class="text-center">
       <div class="row social-media">
@@ -120,8 +24,8 @@
       <div class="row">
         Want to get in touch? Ping us at <a href="mailto:team@hackumass.com">team&commat;hackumass.com</a>.
       </div>
-
     </footer>
+
     <div class="copyright text-center">
       Made by the HackUMass team with <span class="fa fa-heart"></span> and <span class="fa fa-coffee"></span>.
     </div>
