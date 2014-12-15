@@ -1,6 +1,7 @@
 @font-face {
   font-family: AvenirNext;
-  src: url(../assets/fonts/avenir/AvenirNext-Regular.ttf);
+  src: url(../assets/fonts/avenir/AvenirNext-Regular.eot?#iefix) format("embedded-opentype"),
+       url(../assets/fonts/avenir/AvenirNext-Regular.ttf) format("truetype");
 }
 
 html, body {
@@ -86,6 +87,7 @@ footer {
 
 .logo {
   height: 35vh;
+  font-family: AvenirNextHeavy;
 }
 
 .countdown {
