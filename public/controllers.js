@@ -8,7 +8,7 @@ app.controller('LandingCtrl', ['$scope',
 
 app.controller('AboutCtrl', ['$scope',
   function($scope) {
-    $scope.title = 'About';
+    $scope.title = 'What is HackUMass?';
 
     $scope.paragraphs = [
       'HackUMass is an annual, student-run hackathon hosted at the University of Massachusetts, Amherst. It is going to be the largest hackathon of the Pioneer Valley, attracting over 500 of the most ambitious, talented, and creative hackers from all over the country to gather and build innovative software and hardware products. We aim to create a supportive, collaborative, and inclusive environment for all hackers no matter their background, gender, race, or sexuality. HackUMass is an amazing opportunity for students to grow as developers, innovators, and team players in order to bring dreams to reality.',
@@ -34,10 +34,16 @@ app.controller('FaqCtrl', ['$scope',
   }
 ]);
 
+app.controller('ScheduleCtrl', ['$scope',
+  function($scope) {
+    $scope.title = 'Schedule';
+  }
+]);
+
 app.controller('SponsorsCtrl', ['$scope', '$sce',
   function($scope, $sce) {
     $scope.title = 'Sponsors';
 
-    $scope.email = $sce.trustAsHtml('Interested in sponsoring HackUMass? Email us at <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>.');
+    $scope.email = $sce.trustAsHtml('Interested in sponsoring HackUMass? Email us at <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>');
   }
 ]);

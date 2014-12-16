@@ -20,17 +20,30 @@ h6 {
 }
 
 input[type="email"], input[type="email"]:focus {
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid #fff;
-    box-shadow: none;
-    text-align: center;
-    color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  box-shadow: none;
+  text-align: center;
+  color: #fff;
 }
 input:focus::-webkit-input-placeholder {
     color: transparent;
 }
-
+.button {  
+  border: 3px solid #fff;
+  background: none;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.button:hover {
+  background-color: #D94B3F;
+}
 
 .unstyled-link,
 .unstyled-link:hover,
@@ -40,10 +53,23 @@ input:focus::-webkit-input-placeholder {
 }
 
 section {
-  padding: 3em 9em;
+  padding: 2em 2em;
   background-color: #1A1A1A;
   color: #fff;
 }
+
+@media only screen and (min-width: 64em) {
+  section {
+    padding: 2em 8em;
+  }
+}
+
+@media only screen and (min-width: 40em) {
+  section {
+    padding: 2em 4em;
+  }
+}
+
 
 .alternate {
   background-color: #fff;
@@ -87,7 +113,6 @@ footer {
 
 .logo {
   height: 35vh;
-  font-family: AvenirNextHeavy;
 }
 
 .countdown {
@@ -128,6 +153,7 @@ footer {
   color: #4099FF;
 }
 
+/*hexagon css*/
 .hex {
   float: right;
   margin-left: 3px;
@@ -149,22 +175,4 @@ footer {
   border-top: 30px solid #D94B3F;
   border-left: 52px solid transparent;
   border-right: 52px solid transparent;
-}
-
-.button {
-  border: 3px solid #fff;
-  background: none;
-  padding: 15px 25px;
-  display: inline-block;
-  margin: 10px 30px;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 700;
-  position: relative;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  transition: all 0.5s;
-}
-.button:hover {
-  background-color: #D94B3F;
 }

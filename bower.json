@@ -6,6 +6,5 @@
     "font-awesome": "~4.2.0",
     "foundation": "~5.4.7",
     "jquery": "2.1.x",
-    "snap.svg": "~0.3.0"
   }
 }
