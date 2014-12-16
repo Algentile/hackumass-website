@@ -22,21 +22,56 @@
     </div>
     <div class="small-4 column">
       <span class="fa fa-university"></span>
-      <h4>1 Venue</h4>
+      <h4>1 Arena</h4>
     </div>
   </div>
 
   <!--MailChimp Email-->
   <div class="row">
-    <h5>Stay updated</h5>
-    <form action="//hackUMass.us3.list-manage.com/subscribe/post?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <form action="//hackUMass.us3.list-manage.com/subscribe/post-json?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
       <div class="row">
         <div class="small-6 small-centered column">
-          <input type="email" placeholder="all your email are belong to us" name="EMAIL" class="required email" id="mce-EMAIL">
+          <input type="email" placeholder="Stay updated" name="EMAIL" class="required email" id="mce-EMAIL">
         </div>
       </div>
       <div style="position: absolute; left: -5000px;"><input type="text" name="b_916da75d92b720d21cf48bafe_74724eb3c2" tabindex="-1" value=""></div>
       <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
     </form>
+    <div class="row">
+      <div class="text-center" id="email-submit-msg"></div>
+    </div>
   </div>
 </section>
+
+<script>
+  //TODO: YEAH, LETS REFACTOR THIS LATER
+  $('#mc-embedded-subscribe-form').submit(function(e){
+    e.preventDefault();
+    submitSubscribeForm($('#mc-embedded-subscribe-form'));
+  });
+  function submitSubscribeForm($form) {
+    $.ajax({
+        type: "GET",
+        url: $form.attr("action"),
+        data: $form.serialize(),
+        cache: false,
+        dataType: "jsonp",
+        jsonp: "c", // trigger MailChimp to return a JSONP response
+        contentType: "application/json; charset=utf-8",
+
+        success: function(data){
+            var resultMessage = data.msg || "Sorry. Unable to subscribe. Please try again later.";
+
+            if (data.result != "success") {
+                if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
+                    resultMessage = "You're already subscribed. Thanks!";
+                }
+            } else {
+                resultMessage = "All your email are belong to us. (If you just confirm your email, thanks!)";
+            }
+
+            $('#email-submit-msg').text(resultMessage);
+        }
+    });
+  }
+</script>
