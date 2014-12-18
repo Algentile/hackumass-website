@@ -34,6 +34,10 @@ input[type="email"], input[type="email"]:focus {
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
+
+button:focus {
+  background: none;
+}
 .transparent-btn {
   outline: none;
   letter-spacing: 1px;
@@ -109,9 +113,12 @@ section {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 480px) {
   section {
     padding: 24px 48px;
+  }
+  .copyright {
+    font-size: 0.5em;
   }
 }
 
@@ -149,12 +156,15 @@ footer {
 
 .landing {
   min-height: 100vh;
+  width: 100%;
+  display: table;
 }
 .landing > .row{
   padding-bottom: 25px;
 }
 .logo {
-  height: 35vh;
+  display: table-row;
+  height: 100%;
 }
 
 .schedule table {
@@ -166,16 +176,12 @@ table tr td {
 }
 
 .fa {
-  font-size: 3em;
+  font-size: 1em;
   -webkit-transition: color 0.5s ease;
   -moz-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-.fa-coffee {
-  font-size: 1em;
-}
 .fa-heart {
-  font-size: 1em;
   color: #D94B3F;
 }
 
@@ -205,6 +211,7 @@ table tr td {
 }
 
 .social-media {
+  font-size: 3em;
   letter-spacing: 10px;
   padding-bottom: 25px;
 }

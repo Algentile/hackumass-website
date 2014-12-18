@@ -9,8 +9,7 @@ services.service('LandingService', function(){
 services.service('AboutService', function(){
   this.getParagraphs = function(){
     return [
-      'HackUMass is an annual, student-run hackathon hosted at the University of Massachusetts, Amherst. It is going to be the largest hackathon of the Pioneer Valley, attracting over 500 of the most ambitious, talented, and creative hackers from all over the country to gather and build innovative software and hardware products. We aim to create a supportive, collaborative, and inclusive environment for all hackers no matter their background, gender, race, or sexuality. HackUMass is an amazing opportunity for students to grow as developers, innovators, and team players in order to bring dreams to reality.',
-      'HackUMass 2014 was founded by a small team of students with a big vision: hosting the Pioneer Valley\'s first intercollegiate embedded systems hackathon. We attracted students from UMass, Mt. Holyoke, Brown, and MIT, with registration for all 100 spots filling up in less than 2 hours, leaving us with an extensive waitlist. After hacking, teams presented their projects to fellow participants, sponsors, professors, and the local community. All attendees agreed that our excellent event structure, food and snack choices, supportive environment, and the enthusiastic mentors sent over by our sponsors created an unforgettable hackathon experience.'
+      'HackUMass is the largest hackathon in the Pioneer Valley, attracting over 500 hackers from all over the country to one arena. In 36 hours, participants will bring innovative ideas to life through both software and hardware projects.'
     ];
   };
 });
@@ -82,11 +81,11 @@ services.service('ScheduleService', function(){
           },
           {
             time: '1 PM',
-            action: 'Snack'
+            action: 'Lunch'
           },
           {
             time: '4 PM',
-            action:  'Lunch'
+            action:  'Snack'
           },
           {
             time: '7 PM',

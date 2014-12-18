@@ -12,7 +12,7 @@ directives.directive('countdown', function(){
       }
 
       function countdown() {
-        var eventDate = new moment('2015-04-11'),
+        var eventDate = new moment('2015-04-11 08:00:00'),
             now = new moment();
 
         var months = eventDate.diff(now, 'months');
