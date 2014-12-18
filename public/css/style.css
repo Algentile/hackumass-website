@@ -26,7 +26,7 @@ input[type="email"], input[type="email"]:focus {
   border: none;
   border-bottom: 1px solid #fff;
   height: 50px;
-  width: 275px;
+  max-width: 275px;
   box-shadow: none;
   text-align: center;
   color: #fff;
@@ -96,8 +96,8 @@ section {
 footer {
   border-top: solid thick #D94B3F;
   padding: 0 50px;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 60px;
+  padding-bottom: 40px;
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -147,13 +147,22 @@ footer {
 .panel-title {
   width: 75%;
   padding: 10px;
+  cursor: pointer;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   background-color: #D94B3F;
+  transition: 1s ease;
+}
+.panel-title:hover {
+  -webkit-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  transform: scale(1.05);
+  transition: 1s ease;
 }
 .panel {
   width: 75%;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
 }
