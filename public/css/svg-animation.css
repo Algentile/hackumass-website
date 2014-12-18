@@ -2,20 +2,29 @@
 
 #gear1 {
   -webkit-animation: rotate 16s linear infinite;
+  -moz-animation: rotate 16s linear infinite;
+  -ms-animation: rotate 16s linear infinite;
   animation: rotate 16s linear infinite;
   transform-origin: center;
 }
 
 #gear2 {
   -webkit-animation: rotate 16s linear infinite;
-  -webkit-animation-direction: reverse;
+  -moz-animation: rotate 16s linear infinite;
+  -ms-animation: rotate 16s linear infinite;
   animation: rotate 16s linear infinite;
+
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -ms-animation-direction: reverse;
   animation-direction: reverse;
   transform-origin: center;
 }
 
 #gear3 {
   -webkit-animation: rotate 19.999s linear infinite;
+  -moz-animation: rotate 19.999s linear infinite;
+  -ms-animation: rotate 19.999s linear infinite;
   animation: rotate 19.999s linear infinite;
   transform-origin: center;
 }
@@ -23,6 +32,7 @@
 .red-circuit, .white-circuit {
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;;
   transition: all 0.5s;
 }
 svg:hover .red-circuit {
@@ -34,18 +44,43 @@ svg:hover .white-circuit {
 
 .white-stroke {
   -webkit-animation: strokey 1s linear infinite;
+  -moz-animation: strokey 1s linear infinite;
+  -ms-animation: strokey 1s linear infinite;
   animation: strokey 1s linear infinite;
   stroke: #cccccc;
 }
 
 .red-stroke {
   -webkit-animation: strokey 1s linear infinite;
+  -moz-animation: strokey 1s linear infinite;
+  -ms-animation: strokey 1s linear infinite;
   animation: strokey 1s linear infinite;
   stroke: #ff0000;
 }
 
+/*TODO: fade in elements 1 at a time*/
+svg {
+  -webkit-animation: fade 3s;
+  -moz-animation: fade 3s;
+  -ms-animation: fade 3s;
+  animation: fade 3s;
+}
+
 
 @-webkit-keyframes strokey {
+  0% {
+    stroke-width: 0;
+  }
+
+  50% {
+    stroke-width: 1;
+  }
+
+  100% {
+    stroke-width: 0;
+  }
+}
+@-moz-keyframes strokey {
   0% {
     stroke-width: 0;
   }
@@ -80,11 +115,44 @@ svg:hover .white-circuit {
     -webkit-transform: rotate(360deg);
   }
 }
+@-moz-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
 @keyframes rotate {
   from {
     transform: rotate(0);
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
