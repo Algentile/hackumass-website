@@ -27,6 +27,8 @@ controllers.controller('FaqCtrl', ['$scope', 'FaqService',
 controllers.controller('ScheduleCtrl', ['$scope', 'ScheduleService',
   function($scope, ScheduleService) {
     $scope.title = 'Schedule';
+
+    $scope.schedule = ScheduleService.getSchedule();
   }
 ]);
 

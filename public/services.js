@@ -63,7 +63,72 @@ services.service('FaqService', function(){
 });
 
 services.service('ScheduleService', function(){
-
+  this.getSchedule = function(){
+    return [
+      {
+        day: 'Saturday',
+        events: [
+          {
+            time: '8 AM',
+            action:  'Check in, breakfast, and team building'
+          },
+          {
+            time: '10 AM',
+            action: 'Opening ceremony'
+          },
+          {
+            time: '11 AM',
+            action: 'Finish forming teams + hacking begins!'
+          },
+          {
+            time: '1 PM',
+            action: 'Snack'
+          },
+          {
+            time: '4 PM',
+            action:  'Lunch'
+          },
+          {
+            time: '7 PM',
+            action:  'Dinner'
+          },
+          {
+            time: '12 AM',
+            action:  'Midnight Snack'
+          }
+        ]
+      },
+      {
+        day: 'Sunday',
+        events: [
+          {
+            time: '4 AM',
+            action:  'Snack'
+          },
+          {
+            time: '8 AM',
+            action:  'Breakfast'
+          },
+          {
+            time: '1 PM',
+            action:  'Hack submissions + lunch'
+          },
+          {
+            time: '4 PM',
+            action:  'Demos'
+          },
+          {
+            time: '6 PM',
+            action:  'Dinner'
+          },
+          {
+            time: '7 PM',
+            action: 'Awards + closing ceremony'
+          }
+        ]
+      }
+    ];
+  };
 });
 
 services.service('SponsorsService', function(){
