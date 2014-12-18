@@ -87,8 +87,6 @@ footer .transparent-btn {
   background: #fff;
 }
 
-
-
 .unstyled-link,
 .unstyled-link:link,
 .unstyled-link:hover,
@@ -106,7 +104,7 @@ section {
 
 @media only screen and (min-width: 64em) {
   section {
-    padding: 2em 8em;
+    padding: 2em 6em;
   }
 }
 
