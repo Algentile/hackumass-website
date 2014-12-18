@@ -40,6 +40,7 @@ input:focus::-webkit-input-placeholder {
   font-weight: 700;
   z-index: 1;
   background: none;
+  text-align: center;
   text-transform: uppercase;
   border: 2px solid #fff;
   -webkit-transition: all 0.5s;
@@ -97,23 +98,22 @@ footer .transparent-btn {
 }
 
 section {
-  padding: 2em 2em;
+  padding: 24px 96px;
   background-color: #1A1A1A;
   color: #fff;
 }
 
-@media only screen and (min-width: 64em) {
+@media (max-width: 768px) {
   section {
-    padding: 2em 6em;
+    padding: 24px 72px;
   }
 }
 
-@media only screen and (min-width: 40em) {
+@media (max-width: 530px) {
   section {
-    padding: 2em 4em;
+    padding: 24px 48px;
   }
 }
-
 
 .alternate {
   background-color: #fff;
@@ -160,6 +160,10 @@ footer {
 .schedule table {
   width: 100%;
 }
+table tr th,
+table tr td {
+  font-size: 1.1em;
+}
 
 .fa {
   font-size: 3em;
@@ -176,12 +180,13 @@ footer {
 }
 
 .panel-title {
-  width: 75%;
+  width: 100%;
   padding: 10px;
   cursor: pointer;
   margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.2em;
   background-color: #D94B3F;
   transition: 1s ease;
 }
@@ -192,10 +197,11 @@ footer {
   transition: 1s ease;
 }
 .panel {
-  width: 75%;
+  width: 100%;
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1.1em;
 }
 
 .social-media {
