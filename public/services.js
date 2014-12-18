@@ -44,7 +44,7 @@ services.service('FaqService', function(){
       },
       {
         question: 'What should I bring?',
-        answer: 'Your valid student ID, laptop, phone, chargers, a sleeping bad, and enthusiasm. We\'ll provide the rest :)'
+        answer: 'Your valid student ID, laptop, phone, chargers, a sleeping bag, and enthusiasm. We\'ll provide the rest :)'
       },
       {
         question: 'Does it cost anything?',
