@@ -126,6 +126,10 @@ footer {
   height: 35vh;
 }
 
+.schedule table {
+  width: 100%;
+}
+
 .fa {
   font-size: 3em;
   -webkit-transition: color 0.5s ease;
