@@ -33,25 +33,17 @@ input[type="email"], input[type="email"]:focus {
 input:focus::-webkit-input-placeholder {
   color: transparent;
 }
-.transparent-button {
-  background-color: rgba(0,0,0,0.5);
+.transparent-btn {
+  background: transparent;
+  text-transform: uppercase;
   border: 2px solid #fff;
   height: 50px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.transparent-button:hover {
+.transparent-btn:hover {
   background-color: #D94B3F;
-}
-.submit-button {
-  display: inline;
-  width: 75px;
-  text-transform: uppercase;
-}
-.sponsor-button {
-  width: 354px;
-  font-size: .8em;
 }
 
 .unstyled-link,
@@ -115,17 +107,11 @@ footer {
 .landing {
   min-height: 100vh;
 }
-
-.headline {
-  margin-bottom: 25px;
+.landing > .row{
+  padding-bottom: 25px;
 }
-
 .logo {
   height: 35vh;
-}
-
-.countdown {
-  padding: 20px 0;
 }
 
 .fa {
@@ -134,11 +120,9 @@ footer {
   -moz-transition: color 0.5s ease;
   transition: color 0.5s ease;
 }
-
 .fa-coffee {
   font-size: 1em;
 }
-
 .fa-heart {
   font-size: 1em;
   color: #D94B3F;
@@ -160,28 +144,4 @@ footer {
 }
 .fa-twitter:hover {
   color: #4099FF;
-}
-
-/*hexagon css*/
-.hex {
-  float: right;
-  margin-left: 3px;
-  margin-bottom: -26px;
-}
-.hex .top {
-  width: 0;
-  border-bottom: 30px solid #D94B3F;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
-}
-.hex .middle {
-  width: 104px;
-  height: 60px;
-  background: #D94B3F;
-}
-.hex .bottom {
-  width: 0;
-  border-top: 30px solid #D94B3F;
-  border-left: 52px solid transparent;
-  border-right: 52px solid transparent;
 }

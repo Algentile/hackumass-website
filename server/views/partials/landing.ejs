@@ -5,80 +5,29 @@
     <img class="logo small-centered column" src="/assets/img/logo.svg" alt="HackUMass Logo">
   </div>
 
+  <!--Headlne-->
+  <div class="row text-center">
+    <h5>Western Massachusett's Largest Hackathon</h5>
+    <h5>{{date}} @ UMass Amherst</h5>
+  </div>
+
   <!--Countdown-->
-  <div class="countdown text-center">
-    <h2>{{date}}</h2>
-  </div>
-
-  <!--Headline-->
-  <div class="row headline">
+  <div class="row text-center countdown">
     <div class="small-4 column">
-      <span class="fa fa-users"></span>
-      <h4>500 Hackers</h4>
+      <h1>000</h1>
+      <h3>Days</h3>
     </div>
     <div class="small-4 column">
-      <span class="fa fa-clock-o"></span>
-      <h4>36 Hours</h4>
+      <h1>000</h1>
+      <h3>Hours</h3>
     </div>
     <div class="small-4 column">
-      <span class="fa fa-university"></span>
-      <h4>1 Arena</h4>
+      <h1>000</h1>
+      <h3>Minutes</h3>
     </div>
   </div>
 
-  <!--MailChimp Email-->
-  <div class="row">
-    <div class="text-center" id="email-submit-msg"></div>
-  </div>
+  <!--Attend and Sponsor-->
 
-  <div class="row">
-    <form action="//hackUMass.us3.list-manage.com/subscribe/post-json?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-      <div class="small-12 small-centered column">
-        <input type="email" placeholder="Stay updated" name="EMAIL" class="required email" id="mce-EMAIL">
-        <input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="transparent-button submit-button">
-      </div>
-    </form>
-  </div>
-
-  <div class="row">
-    <div class="small-12 small-centered column">
-      <button class="transparent-button sponsor-button">
-        <em>Interested in becoming a sponsor?</em>
-      </button>
-    </div>
-  </div>
 
 </section>
-
-<script>
-  //TODO: YEAH, LETS REFACTOR THIS LATER
-  $('#mc-embedded-subscribe-form').submit(function(e){
-    e.preventDefault();
-    submitSubscribeForm($('#mc-embedded-subscribe-form'));
-  });
-  function submitSubscribeForm($form) {
-    $.ajax({
-        type: "GET",
-        url: $form.attr("action"),
-        data: $form.serialize(),
-        cache: false,
-        dataType: "jsonp",
-        jsonp: "c", // trigger MailChimp to return a JSONP response
-        contentType: "application/json; charset=utf-8",
-
-        success: function(data){
-            var resultMessage = data.msg || "Sorry. Unable to subscribe. Please try again later.";
-
-            if (data.result != "success") {
-                if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-                    resultMessage = "You're already subscribed. Thanks!";
-                }
-            } else {
-                resultMessage = "All your email are belong to us. (If you just confirm your email, thanks!)";
-            }
-
-            $('#email-submit-msg').text(resultMessage);
-        }
-    });
-  }
-</script>

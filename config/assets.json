@@ -11,7 +11,8 @@
       "public/assets/build/dist.min.js": [
         "bower_components/jquery/dist/jquery.min.js",
         "bower_components/foundation/js/foundation.min.js",
-        "bower_components/angular/angular.js"
+        "bower_components/angular/angular.js",
+        "bower_components/moment/min/moment-with-locales.min.js"
       ]
     }
   }

@@ -23,6 +23,15 @@
       </div>
 
       <div class="row">
+        <form action="//hackUMass.us3.list-manage.com/subscribe/post-json?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div class="small-12 small-centered column">
+            <input type="email" placeholder="Email" class="required">
+            <input type="submit" value="Submit" class="transparent-btn submit-button">
+          </div>
+        </form>
+      </div>
+
+      <div class="row">
         Want to get in touch? Ping us at <a href="mailto:team@hackumass.com">team&commat;hackumass.com</a>
       </div>
     </footer>
@@ -30,6 +39,39 @@
     <div class="copyright text-center">
       Made by the HackUMass team with <span class="fa fa-heart"></span> and <span class="fa fa-coffee"></span>.
     </div>
+
+    <script>
+    //TODO: YEAH, LETS REFACTOR THIS LATER
+    $('#mc-embedded-subscribe-form').submit(function(e){
+      e.preventDefault();
+      submitSubscribeForm($('#mc-embedded-subscribe-form'));
+    });
+    function submitSubscribeForm($form) {
+      $.ajax({
+        type: "GET",
+        url: $form.attr("action"),
+        data: $form.serialize(),
+        cache: false,
+        dataType: "jsonp",
+        jsonp: "c", // trigger MailChimp to return a JSONP response
+        contentType: "application/json; charset=utf-8",
+
+        success: function(data){
+          var resultMessage = data.msg || "Sorry. Unable to subscribe. Please try again later.";
+
+          if (data.result != "success") {
+            if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
+              resultMessage = "You're already subscribed. Thanks!";
+            }
+          } else {
+            resultMessage = "All your email are belong to us. (If you just confirm your email, thanks!)";
+          }
+
+          $('#email-submit-msg').text(resultMessage);
+        }
+      });
+    }
+    </script>
 
     <% include includes/foot.ejs %>
   </body>
