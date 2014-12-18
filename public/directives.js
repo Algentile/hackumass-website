@@ -15,21 +15,17 @@ directives.directive('countdown', function(){
         var eventDate = new moment('2015-04-11'),
             now = new moment();
 
-        var units = [];
+        var months = eventDate.diff(now, 'months');
+        eventDate.subtract(months, 'months');
+        var days = eventDate.diff(now, 'days');
+        eventDate.subtract(days, 'days');
+        var hours = normalizeTime(eventDate.diff(now, 'hours'));
+        eventDate.subtract(hours, 'hours');
+        var minutes = normalizeTime(eventDate.diff(now, 'minutes'));
+        eventDate.subtract(minutes, 'minutes');
+        var seconds = normalizeTime(eventDate.diff(now, 'seconds'));
 
-        units.push(eventDate.diff(now, 'days'));
-        eventDate.subtract(units[0], 'days');
-
-        units.push(normalizeTime(eventDate.diff(now, 'hours')));
-        eventDate.subtract(units[1], 'hours');
-
-        units.push(normalizeTime(eventDate.diff(now, 'minutes')));
-
-        var counters = element.find('h1');
-
-        for(var i = 0; i < counters.length; i++){
-          counters[i].innerText = units[i];
-        }
+        element.html('<h5>' + months + ' Months, ' + days + ' Days, ' + hours + ':' + minutes + ':' + seconds + '</h5>');
       }
 
       countdown();
