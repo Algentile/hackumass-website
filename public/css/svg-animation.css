@@ -1,0 +1,184 @@
+#gear1 {
+  -webkit-animation: rotate 16s linear infinite;
+  animation: rotate 16s linear infinite;
+  transform-origin: center;
+}
+
+#gear2 {
+  -webkit-animation: rotate 16s linear infinite;
+  -webkit-animation-direction: reverse;
+  animation: rotate 16s linear infinite;
+  animation-direction: reverse;
+  transform-origin: center;
+}
+
+#gear3 {
+  -webkit-animation: rotate 19.999s linear infinite;
+  animation: rotate 19.999s linear infinite;
+  transform-origin: center;
+}
+
+#red1 {
+  -webkit-animation: pulse 1s ease-in infinite;
+  animation: pulse 1s ease-in infinite;
+}
+
+#red2 {
+  -webkit-animation: pulse 1.5s ease-in infinite;
+  -webkit-animation-delay: .8s;
+  animation: 1.5s ease-in infinite;
+  animation-delay: .8s;
+}
+
+#red3 {
+  -webkit-animation: pulse .8s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation: .8s linear infinite;
+  animation-delay: 1s;
+}
+
+#white1 {
+  -webkit-animation: pulse-white .5s linear infinite;
+  animation: pulse-white .5s linear infinite;
+}
+
+#white2 {
+  -webkit-animation: pulse-white 1s linear infinite;
+  -webkit-animation-delay: 1s;
+  animation: pulse-white 1s linear infinite;
+  animation-delay: 1s;
+}
+
+#white3 {
+  -webkit-animation: pulse-white .3s linear infinite;
+  -webkit-animation-delay: 4s;
+  animation: pulse-white .3s linear infinite;
+  animation-delay: 4s;
+}
+
+#polygon3069 {
+  -webkit-animation: strokey 1s linear infinite;
+  animation: strokey 1s linear infinite;
+  stroke: #ff0000;
+}
+
+#polygon2989 {
+  -webkit-animation: strokey 1s linear infinite;
+  animation: strokey 1s linear infinite;
+  stroke: #cccccc;
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    fill: #DA4B3F;
+  }
+
+  50% {
+    fill: #550000;
+  }
+
+  100% {
+    fill: #DA4B3F;
+  }
+}
+@keyframes pulse {
+  0% {
+    fill: #DA4B3F;
+  }
+
+  50% {
+    fill: #550000;
+  }
+
+  100% {
+    fill: #DA4B3F;
+  }
+}
+
+@-webkit-keyframes strokey {
+  0% {
+    stroke-width: 0;
+  }
+
+  50% {
+    stroke-width: 1;
+  }
+
+  100% {
+    stroke-width: 0;
+  }
+}
+@keyframes strokey {
+  0% {
+    stroke-width: 0;
+  }
+
+  50% {
+    stroke-width: 1;
+  }
+
+  100% {
+    stroke-width: 0;
+  }
+}
+
+@-webkit-keyframes pulse-white {
+  0% {
+    fill: #D1D3D4;
+  }
+
+  50% {
+    fill: #FFFFFF;
+  }
+
+  100% {
+    fill: #D1D3D4;
+  }
+}
+@keyframes pulse-white {
+  0% {
+    fill: #D1D3D4;
+  }
+
+  50% {
+    fill: #FFFFFF;
+  }
+
+  100% {
+    fill: #D1D3D4;
+  }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
