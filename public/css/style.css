@@ -145,9 +145,17 @@ footer {
 }
 
 .panel-title {
-  width: 100%;
+  width: 75%;
   padding: 10px;
+  margin-top: 15px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #D94B3F;
+}
+.panel {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .social-media {

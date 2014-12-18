@@ -37,3 +37,20 @@ directives.directive('countdown', function(){
     }
   };
 });
+
+directives.directive('toggleSibling', function(){
+  return {
+    restrict: 'A',
+    link: function(scope, element, attrs) {
+      var sibling = element.next();
+
+      element.on('click', function(){
+        if(sibling.is(':hidden')) {
+          sibling.slideDown('slow');
+        } else {
+          sibling.slideUp('slow');
+        }
+      });
+    }
+  }
+})
