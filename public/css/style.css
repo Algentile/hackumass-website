@@ -35,15 +35,20 @@ input:focus::-webkit-input-placeholder {
   color: transparent;
 }
 .transparent-btn {
-  background: transparent;
+  outline: none;
+  letter-spacing: 1px;
+  font-weight: 700;
+  z-index: 1;
+  background: none;
   text-transform: uppercase;
   border: 2px solid #fff;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
-.transparent-btn:hover {
-  background-color: #D94B3F;
+.transparent-btn:hover,
+.transparent-btn:active {
+  background: none;
 }
 .landing .transparent-btn {
   height: 60px;
@@ -54,9 +59,41 @@ footer .transparent-btn {
   width: 150px;
 }
 
+.wipe-btn:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #fff;
+  z-index: -1;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.wipe-btn:hover,
+.wipe-btn:active {
+  color: #1A1A1A;
+}
+.wipe-btn:hover:after,
+.wipe-btn:active:after {
+  height: 100%;
+}
+
+.fade-btn:hover,
+.fade-btn:active {
+  color: #1A1A1A;
+  background: #fff;
+}
+
+
+
 .unstyled-link,
+.unstyled-link:link,
 .unstyled-link:hover,
-.unstyled-link:visited {
+.unstyled-link:visited,
+.unstyled-link:active {
   text-decoration: none;
   color: inherit;
 }
@@ -100,10 +137,6 @@ footer {
   padding-bottom: 40px;
   background-color: #1A1A1A;
   color: #fff;
-}
-
-.email-form {
-  padding-bottom: 25px;
 }
 
 .copyright {
