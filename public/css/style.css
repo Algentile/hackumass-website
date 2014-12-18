@@ -20,14 +20,15 @@ h6 {
 }
 
 input[type="email"], input[type="email"]:focus {
-  display: inline;
+  margin-left: auto;
+  margin-right: auto;
   background: transparent;
-  border: 2px solid #fff;
-  margin-bottom: 3px;
+  border: none;
+  border-bottom: 1px solid #fff;
   height: 50px;
   width: 275px;
   box-shadow: none;
-  text-indent: 15px;
+  text-align: center;
   color: #fff;
 }
 input:focus::-webkit-input-placeholder {
@@ -37,13 +38,20 @@ input:focus::-webkit-input-placeholder {
   background: transparent;
   text-transform: uppercase;
   border: 2px solid #fff;
-  height: 50px;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   transition: all 0.5s;
 }
 .transparent-btn:hover {
   background-color: #D94B3F;
+}
+.landing .transparent-btn {
+  height: 60px;
+  width: 180px;
+}
+footer .transparent-btn {
+  height: 50px;
+  width: 150px;
 }
 
 .unstyled-link,
@@ -94,6 +102,10 @@ footer {
   color: #fff;
 }
 
+.email-form {
+  padding-bottom: 25px;
+}
+
 .copyright {
   left: 0;
   right: 0;
@@ -136,7 +148,7 @@ footer {
 
 .social-media {
   letter-spacing: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 
 .fa-facebook:hover {
