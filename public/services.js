@@ -82,11 +82,11 @@ services.service('ScheduleService', function(){
           },
           {
             time: '1 PM',
-            action: 'Snack'
+            action: 'Lunch'
           },
           {
             time: '4 PM',
-            action:  'Lunch'
+            action:  'Snack'
           },
           {
             time: '7 PM',

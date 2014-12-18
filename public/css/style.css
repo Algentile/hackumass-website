@@ -109,9 +109,12 @@ section {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 480px) {
   section {
     padding: 24px 48px;
+  }
+  .copyright {
+    font-size: 0.5em;
   }
 }
 
@@ -149,12 +152,15 @@ footer {
 
 .landing {
   min-height: 100vh;
+  width: 100%;
+  display: table;
 }
 .landing > .row{
   padding-bottom: 25px;
 }
 .logo {
-  height: 35vh;
+  display: table-row;
+  height: 100%;
 }
 
 .schedule table {
