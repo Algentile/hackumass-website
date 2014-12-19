@@ -12,7 +12,6 @@
 
     <footer class="text-center" id="page-footer">
       <div class="msg-box"></div>
-
       <div class="row">
         <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <form action="//hackUMass.us3.list-manage.com/subscribe/post-json?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
@@ -24,9 +23,6 @@
           </div>
         </form>
       </div>
-
-
-
     </footer>
 
     <div class="copyright text-center">
@@ -41,6 +37,28 @@
 
     <script>
     //TODO: YEAH, LETS REFACTOR THIS LATER
+
+    //i am ashamed of myself
+    function blink(element, timeout){
+      setTimeout(function(){
+        element
+          .fadeTo('50', 0.05)
+          .fadeTo('50', 1)
+          .fadeTo('50', 0.05)
+          .fadeTo('50', 1)
+          .fadeTo('50', 0.05)
+          .fadeTo('50', 1);
+      }, timeout);
+    }
+
+    $('#footer-anchor').on('click', function(){
+      blink($('#mc-embedded-subscribe-form'), 1500);
+    });
+
+    $('#sponsor-anchor').on('click', function(){
+      blink($('#sponsor-email'), 1500);
+    });
+
     $('#mc-embedded-subscribe-form').submit(function(e){
       e.preventDefault();
       submitSubscribeForm($('#mc-embedded-subscribe-form'));
