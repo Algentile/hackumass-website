@@ -189,6 +189,12 @@ table tr th,
 table tr td {
   font-size: 1.1em;
 }
+table tr td:nth-child(1) {
+  width: 20%;
+}
+table tr td:nth-child(2) {
+  width: 80%;
+}
 
 .fa {
   font-size: 1em;
