@@ -242,3 +242,7 @@ table tr td {
   color: #ffffff;
   text-align: center;
 }
+
+#mc-embedded-subscribe {
+  width: 200px;
+}
