@@ -237,3 +237,8 @@ table tr td {
 .fa-twitter:hover {
   color: #4099FF;
 }
+
+#registration-information {
+  color: #ffffff;
+  text-align: center;
+}
