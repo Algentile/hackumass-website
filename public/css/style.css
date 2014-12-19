@@ -135,6 +135,19 @@ section {
   color: #1A1A1A;
 }
 
+.alternate-red {
+  background-color: #D94B3F;
+  color: #fff;
+}
+.alternate-red h1,
+.alternate-red h2,
+.alternate-red h3,
+.alternate-red h4,
+.alternate-red h5,
+.alternate-red h6 {
+  color: #fff;
+}
+
 footer {
   border-top: solid thick #D94B3F;
   padding: 40px 50px;
