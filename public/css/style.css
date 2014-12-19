@@ -137,9 +137,7 @@ section {
 
 footer {
   border-top: solid thick #D94B3F;
-  padding: 0 50px;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  padding: 40px 50px;
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -152,6 +150,10 @@ footer {
   color: #fff;
   background-color: #101010;
   font-size: 0.75em;
+}
+
+.msg-box {
+  height: 1.1em;
 }
 
 .landing {

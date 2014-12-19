@@ -11,16 +11,21 @@
     <% include partials/sponsors.ejs %>
 
     <footer class="text-center" id="page-footer">
-      <div class="row email-form">
+      <div class="msg-box"></div>
+
+      <div class="row">
+        <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
         <form action="//hackUMass.us3.list-manage.com/subscribe/post-json?u=916da75d92b720d21cf48bafe&amp;id=74724eb3c2" method="get" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div class="small-6 small-centered column">
-            <input type="email" placeholder="email plz" class="required">
-            <input type="submit" value="Submit" class="transparent-btn fade-btn">
+            <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email please" required>
+            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+            <div style="position: absolute; left: -5000px;"><input type="text" name="b_916da75d92b720d21cf48bafe_74724eb3c2" tabindex="-1" value=""></div>
+            <div class="clear"><input type="submit" value="Submit" name="subscribe" id="mc-embedded-subscribe" class="transparent-btn fade-btn"></div>
           </div>
         </form>
       </div>
 
-      <div id="email-submit-msg"></div>
+
 
     </footer>
 
@@ -52,16 +57,23 @@
 
         success: function(data){
           var resultMessage = data.msg || "Sorry. Unable to subscribe. Please try again later.";
+          var textColor = '#D94B3F';
 
           if (data.result != "success") {
             if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
               resultMessage = "You're already subscribed. Thanks!";
+              textColor = '#00cc00';
             }
           } else {
             resultMessage = "All your email are belong to us. (If you just confirm your email, thanks!)";
+            textColor = '#00cc00';
           }
 
-          $('#email-submit-msg').text(resultMessage);
+          $('.msg-box').css('color', textColor).text(resultMessage);
+
+          setTimeout(function(){
+            $('.msg-box').text('');
+          }, 5000);
         }
       });
     }
