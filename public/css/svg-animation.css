@@ -2,31 +2,38 @@
 
 #gear1 {
   -webkit-animation: rotate 16s linear infinite;
+  /*
   -moz-animation: rotate 16s linear infinite;
   -ms-animation: rotate 16s linear infinite;
   animation: rotate 16s linear infinite;
-  transform-origin: center;
+  */
+  -webkit-transform-origin: center;
 }
 
 #gear2 {
   -webkit-animation: rotate 16s linear infinite;
+  /*
   -moz-animation: rotate 16s linear infinite;
   -ms-animation: rotate 16s linear infinite;
   animation: rotate 16s linear infinite;
-
+  */
   -webkit-animation-direction: reverse;
+  /*
   -moz-animation-direction: reverse;
   -ms-animation-direction: reverse;
   animation-direction: reverse;
-  transform-origin: center;
+  */
+  -webkit-transform-origin: center;
 }
 
 #gear3 {
   -webkit-animation: rotate 19.999s linear infinite;
+  /*
   -moz-animation: rotate 19.999s linear infinite;
   -ms-animation: rotate 19.999s linear infinite;
   animation: rotate 19.999s linear infinite;
-  transform-origin: center;
+  */
+  -webkit-transform-origin: center;
 }
 
 .red-circuit, .white-circuit {
