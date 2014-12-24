@@ -1,7 +1,9 @@
 /*TODO: Fix Firefox bug...FFS FF*/
 
-#gear1 {
-  -webkit-animation: rotate 16s linear infinite;
+#gear1 {    /*bottom gear*/
+  -webkit-animation: 
+    fade 4s,
+    rotate 16s linear infinite;
   /*
   -moz-animation: rotate 16s linear infinite;
   -ms-animation: rotate 16s linear infinite;
@@ -10,14 +12,18 @@
   -webkit-transform-origin: center;
 }
 
-#gear2 {
-  -webkit-animation: rotate 16s linear infinite;
+#gear2 {  /*middle gear*/
+  -webkit-animation: 
+    fade 4s,
+    rotate 16s linear infinite;
   /*
   -moz-animation: rotate 16s linear infinite;
   -ms-animation: rotate 16s linear infinite;
   animation: rotate 16s linear infinite;
   */
-  -webkit-animation-direction: reverse;
+  -webkit-animation-direction: 
+    normal, 
+    reverse;
   /*
   -moz-animation-direction: reverse;
   -ms-animation-direction: reverse;
@@ -26,8 +32,10 @@
   -webkit-transform-origin: center;
 }
 
-#gear3 {
-  -webkit-animation: rotate 19.999s linear infinite;
+#gear3 {  /*top gear*/
+  -webkit-animation: 
+    fade 4s,
+    rotate 19.999s linear infinite;
   /*
   -moz-animation: rotate 19.999s linear infinite;
   -ms-animation: rotate 19.999s linear infinite;
@@ -36,7 +44,13 @@
   -webkit-transform-origin: center;
 }
 
+/*dot stuff*/
+.dot {
+  -webkit-animation: fade 4s;
+}
+
 .red-circuit, .white-circuit {
+  -webkit-animation: fade 3.5s;
   -webkit-transition: all 0.5s;
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;;
@@ -49,8 +63,11 @@ svg:hover .white-circuit {
   fill: #FFFFFF;
 }
 
-.white-stroke {
-  -webkit-animation: strokey 1s linear infinite;
+/*wires*/
+.gray-stroke {
+  -webkit-animation: 
+    fade 4s,
+    strokey 1s linear infinite;
   -moz-animation: strokey 1s linear infinite;
   -ms-animation: strokey 1s linear infinite;
   animation: strokey 1s linear infinite;
@@ -58,21 +75,33 @@ svg:hover .white-circuit {
 }
 
 .red-stroke {
-  -webkit-animation: strokey 1s linear infinite;
+  -webkit-animation: 
+    fade 4s,
+    strokey 1s linear infinite;
   -moz-animation: strokey 1s linear infinite;
   -ms-animation: strokey 1s linear infinite;
   animation: strokey 1s linear infinite;
   stroke: #ff0000;
 }
 
-/*TODO: fade in elements 1 at a time*/
-svg {
-  -webkit-animation: fade 3s;
-  -moz-animation: fade 3s;
-  -ms-animation: fade 3s;
-  animation: fade 3s;
+.white-stroke {
+  -webkit-animation: 
+    fade 4s,
+    strokey 1s linear infinite;
+  -moz-animation: strokey 1s linear infinite;
+  -ms-animation: strokey 1s linear infinite;
+  animation: strokey 1s linear infinite;
 }
 
+/*HACK*/
+.hack {
+  -webkit-animation: fade 3s;
+}
+
+/*UMASS*/
+.umass {
+  -webkit-animation: fade 10s;
+}
 
 @-webkit-keyframes strokey {
   0% {
@@ -140,26 +169,17 @@ svg {
 }
 
 @-webkit-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0% { opacity: 0;}
+  25% { opacity: 0;}
+  100% { opacity: 1;}
 }
 @-moz-keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0% { opacity: 0;}
+  25% { opacity: 0;}
+  100% { opacity: 1;}
 }
 @keyframes fade {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
+  0% { opacity: 0;}
+  25% { opacity: 0;}
+  100% { opacity: 1;}
 }
