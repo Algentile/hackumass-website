@@ -9,12 +9,7 @@ html, body {
   margin: 0;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: AvenirNext;
   color: #fff;
 }
@@ -60,8 +55,8 @@ button:focus {
   width: 180px;
 }
 footer .transparent-btn {
-  height: 50px;
-  width: 150px;
+  height: 60px;
+  width: 180px;
 }
 
 .wipe-btn:after {
@@ -107,21 +102,6 @@ section {
   color: #fff;
 }
 
-@media (max-width: 768px) {
-  section {
-    padding: 24px 72px;
-  }
-}
-
-@media (max-width: 480px) {
-  section {
-    padding: 24px 48px;
-  }
-  .copyright {
-    font-size: 0.5em;
-  }
-}
-
 .alternate {
   background-color: #fff;
   color: #1A1A1A;
@@ -150,7 +130,7 @@ section {
 
 footer {
   border-top: solid thick #D94B3F;
-  padding: 40px 50px;
+  padding: 45px;
   background-color: #1A1A1A;
   color: #fff;
 }
@@ -166,7 +146,8 @@ footer {
 }
 
 .msg-box {
-  height: 1.1em;
+  height: 1em;
+  margin-bottom: 1em;
 }
 
 .landing {
@@ -249,6 +230,33 @@ table tr td:nth-child(2) {
   text-align: center;
 }
 
-#mc-embedded-subscribe {
-  width: 200px;
+/*Breakpoints*/
+@media (max-width: 768px) {
+  section {
+    padding: 24px 64px;
+  }
+  body {
+    font-size: 0.8em;
+  }
+  footer {
+    padding: 30px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  section {
+    padding: 24px 32px;
+  }
+  body {
+    font-size: 0.6em;
+  }
+  footer {
+    padding: 15px;
+  }
+  footer .transparent-btn {
+    height: 40px;
+    width: 120px;
+  }
+
 }
