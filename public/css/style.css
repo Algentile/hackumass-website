@@ -171,10 +171,10 @@ table tr td {
   font-size: 1.1em;
 }
 table tr td:nth-child(1) {
-  width: 20%;
+  width: 25%;
 }
 table tr td:nth-child(2) {
-  width: 80%;
+  width: 75%;
 }
 
 .fa {
@@ -250,6 +250,9 @@ table tr td:nth-child(2) {
   }
   body {
     font-size: 0.6em;
+  }
+  input[type="email"] {
+    font-size: 0.8em;
   }
   footer {
     padding: 15px;
