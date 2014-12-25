@@ -104,7 +104,7 @@ svg:hover .white-circuit {
 
 /*UMASS*/
 .umass {
-  -webkit-animation: fade 10s;
+  -webkit-animation: fade 6s;
 }
 
 @-webkit-keyframes strokey {
