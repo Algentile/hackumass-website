@@ -69,32 +69,15 @@ svg:hover .white-circuit {
 
 /*wires*/
 .gray-stroke {
-  -webkit-animation: 
-    fade 4s,
-    strokey 1s linear infinite;
-  -moz-animation: strokey 1s linear infinite;
-  -ms-animation: strokey 1s linear infinite;
-  animation: strokey 1s linear infinite;
-  stroke: #cccccc;
+  -webkit-animation: fade 4s;
 }
 
 .red-stroke {
-  -webkit-animation: 
-    fade 4s,
-    strokey 1s linear infinite;
-  -moz-animation: strokey 1s linear infinite;
-  -ms-animation: strokey 1s linear infinite;
-  animation: strokey 1s linear infinite;
-  stroke: #ff0000;
+  -webkit-animation: fade 4s;
 }
 
 .white-stroke {
-  -webkit-animation: 
-    fade 4s,
-    strokey 1s linear infinite;
-  -moz-animation: strokey 1s linear infinite;
-  -ms-animation: strokey 1s linear infinite;
-  animation: strokey 1s linear infinite;
+  -webkit-animation: fade 4s;
 }
 
 /*HACK*/
@@ -105,46 +88,6 @@ svg:hover .white-circuit {
 /*UMASS*/
 .umass {
   -webkit-animation: fade 6s;
-}
-
-@-webkit-keyframes strokey {
-  0% {
-    stroke-width: 0;
-  }
-
-  50% {
-    stroke-width: 1;
-  }
-
-  100% {
-    stroke-width: 0;
-  }
-}
-@-moz-keyframes strokey {
-  0% {
-    stroke-width: 0;
-  }
-
-  50% {
-    stroke-width: 1.5;
-  }
-
-  100% {
-    stroke-width: 0;
-  }
-}
-@keyframes strokey {
-  0% {
-    stroke-width: 0;
-  }
-
-  50% {
-    stroke-width: 1.5;
-  }
-
-  100% {
-    stroke-width: 0;
-  }
 }
 
 @-webkit-keyframes rotate {
