@@ -27,7 +27,7 @@ services.service('FaqService', function(){
       },
       {
         question: 'Who can attend?',
-        answer: 'All undergraduate or graduate students are welcome. If you\'re under 18, we will need you to bring a signed parental consent form.'
+        answer: 'All students are welcome. If you\'re under 18, we will need you to bring a signed parental consent form.'
       },
       {
         question: 'Do I need experience?',
@@ -43,7 +43,7 @@ services.service('FaqService', function(){
       },
       {
         question: 'What should I bring?',
-        answer: 'Your valid student ID, laptop, phone, chargers, a sleeping bag, and enthusiasm. We\'ll provide the rest :)'
+        answer: 'A valid photo ID that includes your name and date of birth, laptop, phone, chargers, a sleeping bag, and enthusiasm. We\'ll provide the rest. :)'
       },
       {
         question: 'Does it cost anything?',

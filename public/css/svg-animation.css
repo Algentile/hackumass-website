@@ -1,7 +1,7 @@
 /*TODO: Fix Firefox bug...FFS FF*/
 
 #gear1 {    /*bottom gear*/
-  -webkit-animation: 
+  -webkit-animation:
     fade 4s,
     rotate 16s linear infinite;
   /*
@@ -13,7 +13,7 @@
 }
 
 #gear2 {  /*middle gear*/
-  -webkit-animation: 
+  -webkit-animation:
     fade 4s,
     rotate 16s linear infinite;
   /*
@@ -21,8 +21,8 @@
   -ms-animation: rotate 16s linear infinite;
   animation: rotate 16s linear infinite;
   */
-  -webkit-animation-direction: 
-    normal, 
+  -webkit-animation-direction:
+    normal,
     reverse;
   /*
   -moz-animation-direction: reverse;
@@ -33,7 +33,7 @@
 }
 
 #gear3 {  /*top gear*/
-  -webkit-animation: 
+  -webkit-animation:
     fade 4s,
     rotate 19.999s linear infinite;
   /*
@@ -65,7 +65,7 @@ svg:hover .white-circuit {
 
 /*wires*/
 .gray-stroke {
-  -webkit-animation: 
+  -webkit-animation:
     fade 4s,
     strokey 1s linear infinite;
   -moz-animation: strokey 1s linear infinite;
@@ -75,7 +75,7 @@ svg:hover .white-circuit {
 }
 
 .red-stroke {
-  -webkit-animation: 
+  -webkit-animation:
     fade 4s,
     strokey 1s linear infinite;
   -moz-animation: strokey 1s linear infinite;
@@ -85,7 +85,7 @@ svg:hover .white-circuit {
 }
 
 .white-stroke {
-  -webkit-animation: 
+  -webkit-animation:
     fade 4s,
     strokey 1s linear infinite;
   -moz-animation: strokey 1s linear infinite;
@@ -100,7 +100,7 @@ svg:hover .white-circuit {
 
 /*UMASS*/
 .umass {
-  -webkit-animation: fade 10s;
+  -webkit-animation: fade 6s;
 }
 
 @-webkit-keyframes strokey {
