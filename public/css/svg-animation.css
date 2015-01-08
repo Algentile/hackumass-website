@@ -1,5 +1,9 @@
 /*TODO: Fix Firefox bug...FFS FF*/
 
+#santahat {
+  -webkit-animation: fade 2s;
+}
+
 #gear1 {    /*bottom gear*/
   -webkit-animation:
     fade 4s,
@@ -91,6 +95,15 @@ svg:hover .white-circuit {
   -moz-animation: strokey 1s linear infinite;
   -ms-animation: strokey 1s linear infinite;
   animation: strokey 1s linear infinite;
+  -webkit-animation: fade 4s;
+}
+
+.red-stroke {
+  -webkit-animation: fade 4s;
+}
+
+.white-stroke {
+  -webkit-animation: fade 4s;
 }
 
 /*HACK*/
@@ -101,6 +114,7 @@ svg:hover .white-circuit {
 /*UMASS*/
 .umass {
   -webkit-animation: fade 6s;
+<<<<<<< HEAD
 }
 
 @-webkit-keyframes strokey {
@@ -141,6 +155,8 @@ svg:hover .white-circuit {
   100% {
     stroke-width: 0;
   }
+=======
+>>>>>>> 674faa4749a62180ffc6e3e8cc7e60a60d613db5
 }
 
 @-webkit-keyframes rotate {
