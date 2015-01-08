@@ -1,9 +1,5 @@
 /*TODO: Fix Firefox bug...FFS FF*/
 
-#santahat {
-  -webkit-animation: fade 2s;
-}
-
 #gear1 {    /*bottom gear*/
   -webkit-animation:
     fade 4s,
