@@ -114,7 +114,6 @@ svg:hover .white-circuit {
 /*UMASS*/
 .umass {
   -webkit-animation: fade 6s;
-<<<<<<< HEAD
 }
 
 @-webkit-keyframes strokey {
@@ -155,8 +154,6 @@ svg:hover .white-circuit {
   100% {
     stroke-width: 0;
   }
-=======
->>>>>>> 674faa4749a62180ffc6e3e8cc7e60a60d613db5
 }
 
 @-webkit-keyframes rotate {
