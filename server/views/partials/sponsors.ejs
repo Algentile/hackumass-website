@@ -2,4 +2,28 @@
 <section class="alternate text-center" ng-controller="SponsorsCtrl">
   <h1>{{title}}</h1>
   <p id="sponsor" ng-bind-html="email"></p>
+  <div id="logos">
+		<ul id="large"> 
+			<li ng-repeat="logo in largelogos">
+				<a href={{link}}>
+				<img src={{"/assets/img/logos/"+logo.image_url}} alt={{logo.name}}/>
+				</a>
+			</li>
+		</ul>
+		<ul id="medium"> 
+			<li ng-repeat="logo in mediumlogos">
+				<a href={{link}}>
+				<img src={{"/assets/img/logos/" + logo.image_url}} alt={{logo.name}}/>
+				</a>
+			</li>
+		</ul>
+		<h2> {{sub}} </h2>
+		<ul id="partners">
+			<li ng-repeat="logo in partnerlogos">
+				<a href={{link}}>
+				<img src={{"/assets/img/logos/"+ logo.image_url}} alt={{logo.name}}/>
+				</a>
+			</li>
+		</ul>
+  </div>
 </section>

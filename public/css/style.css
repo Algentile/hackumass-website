@@ -227,6 +227,40 @@ table tr td:nth-child(2) {
   text-align: center;
 }
 
+#sponsors ul{
+	list-style-type: none;
+	display: inline-block;
+}
+
+#large img{
+	margin: 12px auto 12px auto;
+	max-width: 250px;
+}
+
+#medium img{
+	margin: 12px auto 12px auto;
+	max-width: 125px;
+}
+
+#partners img{
+	margin: 12px auto 12px auto;
+	max-width: 500px;
+}
+
+
+
+#sponsors img{
+	width: 100%;
+	transition: opacity 0.5s;
+	transition-property: opacity;
+	transition-duration: 0.5s;
+	transition-timing-function: initial;
+	transition-delay: initial;
+	opacity: 0.75;
+	vertical-align: middle;
+}
+
+
 /*Breakpoints*/
 @media (max-width: 768px) {
   section {

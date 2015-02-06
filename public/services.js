@@ -31,7 +31,7 @@ services.service('FaqService', function(){
       },
       {
         question: 'Do I need experience?',
-        answer: 'We will have an entire area and in the arena dedicated to beginners with plenty of mentors and resources, so don’t worry about not knowing enough beforehand. Come to learn and experience your first hackathon - we guarantee you\'ll want to return.'
+        answer: 'We will have an entire area in the arena dedicated to beginners with plenty of mentors and resources, so don’t worry about not knowing enough beforehand. Come to learn and experience your first hackathon - we guarantee you\'ll want to return.'
       },
       {
         question: 'What can I make?',
@@ -131,5 +131,51 @@ services.service('ScheduleService', function(){
 });
 
 services.service('SponsorsService', function(){
-
+	this.getLarge = function{
+		return[
+		{
+			link: 'www.google.com', 
+			image_url: 'google.png', 
+			name: 'Google'
+		},
+		{
+			link: 'www.smartuplegal.com', 
+			image_url: 'smartup.png', 
+			name: 'SmartUp Legal'
+		}
+		]
+	}
+	this.getMedium = function{
+		return[
+		{
+			link: 'www.facebook.com', 
+			image_url: 'facebook.png', 
+			name: 'Facebook'
+		},
+		{
+			link: 'robinpowered.com', 
+			image_url: 'robin.png', 
+			name: 'Robin'
+		},
+		{
+			link: 'attend.com', 
+			image_url: 'attend.png', 
+			name: 'Attend.com'
+		}
+		]
+	}
+	this.getPartners = function{
+		return[
+		{
+			link: 'mlh.io', 
+			image_url: 'mlh.png', 
+			name: 'Major League Hacking'
+		},
+		{
+			link: 'www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship', 
+			image_url: 'CforE.png', 
+			name: 'Berthiaume Center for Entrepreneurship'
+		}
+		]
+	}
 });
