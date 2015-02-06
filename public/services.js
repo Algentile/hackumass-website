@@ -131,51 +131,51 @@ services.service('ScheduleService', function(){
 });
 
 services.service('SponsorsService', function(){
-	this.getLarge = function{
-		return[
-		{
-			link: 'www.google.com', 
-			image_url: 'google.png', 
-			name: 'Google'
-		},
-		{
-			link: 'www.smartuplegal.com', 
-			image_url: 'smartup.png', 
-			name: 'SmartUp Legal'
-		}
+	this.getLargeLogos = function(){
+		return [
+  		{
+  			link: 'www.google.com',
+  			image_url: 'assets/img/logos/google.png',
+  			name: 'Google'
+  		},
+  		{
+  			link: 'www.smartuplegal.com',
+  			image_url: 'assets/img/logos/smartup.png',
+  			name: 'SmartUp Legal'
+  		}
 		]
 	}
-	this.getMedium = function{
-		return[
-		{
-			link: 'www.facebook.com', 
-			image_url: 'facebook.png', 
-			name: 'Facebook'
-		},
-		{
-			link: 'robinpowered.com', 
-			image_url: 'robin.png', 
-			name: 'Robin'
-		},
-		{
-			link: 'attend.com', 
-			image_url: 'attend.png', 
-			name: 'Attend.com'
-		}
+	this.getMediumLogos = function(){
+		return [
+  		{
+  			link: 'www.facebook.com',
+  			image_url: 'assets/img/logos/facebook.png',
+  			name: 'Facebook'
+  		},
+  		{
+  			link: 'robinpowered.com',
+  			image_url: 'assets/img/logos/robin.png',
+  			name: 'Robin'
+  		},
+  		{
+  			link: 'attend.com',
+  			image_url: 'assets/img/logos/attend.png',
+  			name: 'Attend.com'
+  		}
 		]
 	}
-	this.getPartners = function{
-		return[
-		{
-			link: 'mlh.io', 
-			image_url: 'mlh.png', 
-			name: 'Major League Hacking'
-		},
-		{
-			link: 'www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship', 
-			image_url: 'CforE.png', 
-			name: 'Berthiaume Center for Entrepreneurship'
-		}
+	this.getPartnerLogos = function(){
+		return [
+  		{
+  			link: 'mlh.io',
+  			image_url: 'assets/img/logos/mlh.png',
+  			name: 'Major League Hacking'
+  		},
+  		{
+  			link: 'www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
+  			image_url: 'assets/img/logos/c4e.png',
+  			name: 'Berthiaume Center for Entrepreneurship'
+  		}
 		]
 	}
 });

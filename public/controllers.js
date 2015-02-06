@@ -35,10 +35,10 @@ controllers.controller('ScheduleCtrl', ['$scope', 'ScheduleService',
 controllers.controller('SponsorsCtrl', ['$scope', '$sce', 'SponsorsService',
   function($scope, $sce, SponsorsService) {
     $scope.title = 'Sponsors';
-	$scope.sub = 'In partnership with';
+  	$scope.subtitle = 'In partnership with';
     $scope.email = $sce.trustAsHtml('Interested in sponsoring HackUMass? Email us at <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>');
-	$scope.largelogos = SponsorsService.getLargeLogos();
-	$scope.mediumlogos = SponsorsService.getMediumLogos();
-	$scope.partnerlogos = SponsorsService.getPartnerLogos();
+  	$scope.largelogos = SponsorsService.getLargeLogos();
+  	$scope.mediumlogos = SponsorsService.getMediumLogos();
+  	$scope.partnerlogos = SponsorsService.getPartnerLogos();
   }
 ]);
