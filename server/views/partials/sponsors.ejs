@@ -4,23 +4,23 @@
   <div class="logos">
 		<ul class="large">
 			<li ng-repeat="logo in largelogos">
-				<a href={{link}}>
-				<img src={{logo.image_url}} alt={{logo.name}}/>
+				<a href={{logo.link}} target="_blank">
+				  <img src={{logo.image_url}} alt={{logo.name}}/>
 				</a>
 			</li>
 		</ul>
 		<ul class="medium">
 			<li ng-repeat="logo in mediumlogos">
-				<a href={{link}}>
-				<img src={{logo.image_url}} alt={{logo.name}}/>
+				<a href={{logo.link}} target="_blank">
+				  <img src={{logo.image_url}} alt={{logo.name}}/>
 				</a>
 			</li>
 		</ul>
 		<h2> {{subtitle}} </h2>
 		<ul class="partners">
 			<li ng-repeat="logo in partnerlogos">
-				<a href={{link}}>
-				<img src={{logo.image_url}} alt={{logo.name}}/>
+				<a href={{logo.link}} target="_blank">
+				  <img src={{logo.image_url}} alt={{logo.name}}/>
 				</a>
 			</li>
 		</ul>

@@ -134,12 +134,12 @@ services.service('SponsorsService', function(){
 	this.getLargeLogos = function(){
 		return [
   		{
-  			link: 'www.google.com',
+  			link: 'https://www.google.com/',
   			image_url: 'assets/img/logos/google.png',
   			name: 'Google'
   		},
   		{
-  			link: 'www.smartuplegal.com',
+  			link: 'https://www.smartuplegal.com/',
   			image_url: 'assets/img/logos/smartup.png',
   			name: 'SmartUp Legal'
   		}
@@ -148,17 +148,17 @@ services.service('SponsorsService', function(){
 	this.getMediumLogos = function(){
 		return [
   		{
-  			link: 'www.facebook.com',
+  			link: 'https://www.facebook.com/',
   			image_url: 'assets/img/logos/facebook.png',
   			name: 'Facebook'
   		},
   		{
-  			link: 'robinpowered.com',
+  			link: 'https://robinpowered.com/',
   			image_url: 'assets/img/logos/robin.png',
   			name: 'Robin'
   		},
   		{
-  			link: 'attend.com',
+  			link: 'https://www.attend.com/',
   			image_url: 'assets/img/logos/attend.png',
   			name: 'Attend.com'
   		}
@@ -167,12 +167,12 @@ services.service('SponsorsService', function(){
 	this.getPartnerLogos = function(){
 		return [
   		{
-  			link: 'mlh.io',
+  			link: 'https://mlh.io/',
   			image_url: 'assets/img/logos/mlh.png',
   			name: 'Major League Hacking'
   		},
   		{
-  			link: 'www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
+  			link: 'https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
   			image_url: 'assets/img/logos/c4e.png',
   			name: 'Berthiaume Center for Entrepreneurship'
   		}
