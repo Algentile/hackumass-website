@@ -14,6 +14,14 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+h1 {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
 .clearfix:after,
 .clearfix:before {
   display: block;
@@ -249,17 +257,17 @@ table tr td:nth-child(2) {
 
 .logos .large img {
 	margin: 12px auto 12px auto;
-	width: 250px;
+	width: 500px;
 }
 
 .logos .medium img {
 	margin: 12px auto 12px auto;
-	width: 125px;
+	width: 250px;
 }
 
-.logos .partners img {
-	margin: 12px auto 12px auto;
-	width: 500px;
+.logos .small img {
+  margin: 12px auto 12px auto;
+  width: 125px;
 }
 
 .sponsors img {
