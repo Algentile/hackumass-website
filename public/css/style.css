@@ -247,34 +247,36 @@ table tr td:nth-child(2) {
   padding: 10px;
 }
 
-.logos .large img{
+.logos .large img {
 	margin: 12px auto 12px auto;
-	max-width: 250px;
+	width: 250px;
 }
 
-.logos .medium img{
+.logos .medium img {
 	margin: 12px auto 12px auto;
-	max-width: 125px;
+	width: 125px;
 }
 
-.logos .partners img{
+.logos .partners img {
 	margin: 12px auto 12px auto;
-	max-width: 500px;
+	width: 500px;
 }
 
-.sponsors img{
+.sponsors img {
 	width: 100%;
 	transition: opacity 0.5s;
 	transition-property: opacity;
 	transition-duration: 0.5s;
 	transition-timing-function: initial;
 	transition-delay: initial;
-	opacity: 0.5;
+	/*opacity: 0.5;*/
 	vertical-align: middle;
 }
+/*
 .sponsors img:hover {
   opacity: 1;
 }
+*/
 
 
 /*Breakpoints*/
