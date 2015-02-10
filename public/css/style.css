@@ -14,6 +14,13 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+.clearfix:after,
+.clearfix:before {
+  display: block;
+  height: 1px;
+  content: " ";
+}
+
 input[type="email"], input[type="email"]:focus {
   margin-left: auto;
   margin-right: auto;
@@ -186,14 +193,15 @@ table tr td:nth-child(2) {
 
 .panel-title {
   width: 100%;
-  padding: 10px;
+  padding: 0 10px;
   cursor: pointer;
-  margin-top: 15px;
   margin-left: auto;
   margin-right: auto;
   font-size: 1.2em;
-  background-color: #D94B3F;
   transition: 1s ease;
+}
+.panel-title h4 {
+  color: #D94B3F;
 }
 .panel-title:hover {
   -webkit-transform: scale(1.05);
@@ -203,10 +211,14 @@ table tr td:nth-child(2) {
 }
 .panel {
   width: 100%;
-  margin-bottom: 0;
+  padding: 0 10px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  font-size: 1.1em;
+  font-size: 0.9em;
+  border: none;
+  background-color: #1A1A1A;
+  color: #fff;
 }
 
 .social-media {
