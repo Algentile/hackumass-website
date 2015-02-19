@@ -2,7 +2,14 @@
 <section class="alternate text-center sponsors" ng-controller="SponsorsCtrl">
   <h1>{{title}}</h1>
   <div class="logos">
-		<ul class="medium">
+		<ul class="large">
+      <li ng-repeat="logo in xlargelogos">
+        <a href={{logo.link}} target="_blank">
+          <img src={{logo.image_url}} alt={{logo.name}}/>
+        </a>
+      </li>  
+    </ul>
+    <ul class="medium">
 			<li ng-repeat="logo in largelogos">
 				<a href={{logo.link}} target="_blank">
 				  <img src={{logo.image_url}} alt={{logo.name}}/>

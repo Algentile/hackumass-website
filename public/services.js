@@ -131,8 +131,23 @@ services.service('ScheduleService', function(){
 });
 
 services.service('SponsorsService', function(){
+  this.getXLargeLogos = function(){
+    return [
+      {
+        link: 'http://www.mashery.com/',
+        image_url: 'assets/img/logos/mashery.png',
+        name: 'Mashery'
+      }
+    ]
+  }
+
 	this.getLargeLogos = function(){
 		return [
+      {
+  			link: 'http://cimpress.com/',
+  			image_url: 'assets/img/logos/cimpress.png',
+  			name: 'Cimpress'
+      },
   		{
   			link: 'https://www.google.com/',
   			image_url: 'assets/img/logos/google.png',
@@ -147,6 +162,16 @@ services.service('SponsorsService', function(){
 	}
 	this.getMediumLogos = function(){
 		return [
+      {
+        link: 'https://tessel.io/',
+        image_url: 'assets/img/logos/tessel.png',
+        name: 'Tessel'
+      },
+      {
+        link: 'https://www.stickermule.com/',
+        image_url: 'assets/img/logos/stickermule.png',
+        name: 'StickerMule'
+      },
   		{
   			link: 'https://www.facebook.com/',
   			image_url: 'assets/img/logos/facebook.png',

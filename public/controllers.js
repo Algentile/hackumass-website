@@ -37,7 +37,8 @@ controllers.controller('SponsorsCtrl', ['$scope', '$sce', 'SponsorsService',
     $scope.title = 'Sponsors';
   	$scope.subtitle = 'Partners';
     $scope.email = $sce.trustAsHtml('Interested in sponsoring HackUMass? Email us at <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>');
-  	$scope.largelogos = SponsorsService.getLargeLogos();
+  	$scope.xlargelogos = SponsorsService.getXLargeLogos();
+    $scope.largelogos = SponsorsService.getLargeLogos();
   	$scope.mediumlogos = SponsorsService.getMediumLogos();
   	$scope.partnerlogos = SponsorsService.getPartnerLogos();
   }
