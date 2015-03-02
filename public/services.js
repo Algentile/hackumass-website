@@ -186,7 +186,22 @@ services.service('SponsorsService', function(){
   			link: 'https://www.attend.com/',
   			image_url: 'assets/img/logos/attend.png',
   			name: 'Attend.com'
-  		}
+  		},
+      {
+        link: 'https://www.cisco.com/',
+        image_url: 'assets/img/logos/cisco.png',
+        name: 'Cisco'
+      },
+      {
+        link: 'https://www.kloudless.com/',
+        image_url: 'assets/img/logos/kloudless.png',
+        name: 'Kloudless'
+      },
+      {
+        link: 'https://www.thalmic.com/',
+        image_url: 'assets/img/logos/thalmic.png',
+        name: 'Thalmic Labs'
+      }
 		]
 	}
 	this.getPartnerLogos = function(){
@@ -200,7 +215,12 @@ services.service('SponsorsService', function(){
   			link: 'https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
   			image_url: 'assets/img/logos/c4e.png',
   			name: 'Berthiaume Center for Entrepreneurship'
-  		}
+  		},
+      {
+        link: 'https://http://www.umassdining.com/',
+        image_url: 'assets/img/logos/umassdining.png',
+        name: 'UMasss Dining'
+      }
 		]
 	}
 });
