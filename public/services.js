@@ -201,6 +201,11 @@ services.service('SponsorsService', function(){
         link: 'https://www.thalmic.com/',
         image_url: 'assets/img/logos/thalmic.png',
         name: 'Thalmic Labs'
+      },
+      {
+        link: 'https://squareup.com/',
+        image_url: 'assets/img/logos/square.png',
+        name: 'Square'
       }
 		]
 	}
