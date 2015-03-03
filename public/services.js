@@ -163,6 +163,16 @@ services.service('SponsorsService', function(){
 	this.getMediumLogos = function(){
 		return [
       {
+        link: 'https://tessel.io/',
+        image_url: 'assets/img/logos/tessel.png',
+        name: 'Tessel'
+      },
+      {
+        link: 'https://www.stickermule.com/',
+        image_url: 'assets/img/logos/stickermule.png',
+        name: 'StickerMule'
+      },
+      {
         link: 'https://www.cisco.com/',
         image_url: 'assets/img/logos/cisco.png',
         name: 'Cisco'
@@ -176,16 +186,6 @@ services.service('SponsorsService', function(){
         link: 'https://www.attend.com/',
         image_url: 'assets/img/logos/attend.png',
         name: 'Attend.com'
-      },
-      {
-        link: 'https://tessel.io/',
-        image_url: 'assets/img/logos/tessel.png',
-        name: 'Tessel'
-      },
-      {
-        link: 'https://www.stickermule.com/',
-        image_url: 'assets/img/logos/stickermule.png',
-        name: 'StickerMule'
       },
   		{
   			link: 'https://www.facebook.com/',
