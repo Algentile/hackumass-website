@@ -232,7 +232,7 @@ services.service('SponsorsService', function(){
         name: 'UMasss Dining'
       },
       {
-        link: 'https://http://www.http://umassamherstm5.org/',
+        link: 'http://umassamherstm5.org/',
         image_url: 'assets/img/logos/m5.png',
         name: 'UMasss Amherst M5'
       }
