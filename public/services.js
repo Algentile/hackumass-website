@@ -163,6 +163,21 @@ services.service('SponsorsService', function(){
 	this.getMediumLogos = function(){
 		return [
       {
+        link: 'https://www.cisco.com/',
+        image_url: 'assets/img/logos/cisco.png',
+        name: 'Cisco'
+      },
+      {
+        link: 'https://robinpowered.com/',
+        image_url: 'assets/img/logos/robin.png',
+        name: 'Robin'
+      },
+      {
+        link: 'https://www.attend.com/',
+        image_url: 'assets/img/logos/attend.png',
+        name: 'Attend.com'
+      },
+      {
         link: 'https://tessel.io/',
         image_url: 'assets/img/logos/tessel.png',
         name: 'Tessel'
@@ -177,21 +192,6 @@ services.service('SponsorsService', function(){
   			image_url: 'assets/img/logos/facebook.png',
   			name: 'Facebook'
   		},
-  		{
-  			link: 'https://robinpowered.com/',
-  			image_url: 'assets/img/logos/robin.png',
-  			name: 'Robin'
-  		},
-  		{
-  			link: 'https://www.attend.com/',
-  			image_url: 'assets/img/logos/attend.png',
-  			name: 'Attend.com'
-  		},
-      {
-        link: 'https://www.cisco.com/',
-        image_url: 'assets/img/logos/cisco.png',
-        name: 'Cisco'
-      },
       {
         link: 'https://www.kloudless.com/',
         image_url: 'assets/img/logos/kloudless.png',
@@ -206,6 +206,11 @@ services.service('SponsorsService', function(){
         link: 'https://squareup.com/',
         image_url: 'assets/img/logos/square.png',
         name: 'Square'
+      },
+      {
+        link: 'https://www.twilio.com/',
+        image_url: 'assets/img/logos/twilio.png',
+        name: 'Twilio'
       }
 		]
 	}
