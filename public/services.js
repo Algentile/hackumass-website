@@ -227,7 +227,7 @@ services.service('SponsorsService', function(){
   			name: 'Berthiaume Center for Entrepreneurship'
   		},
       {
-        link: 'https://http://www.umassdining.com/',
+        link: 'http://www.umassdining.com/',
         image_url: 'assets/img/logos/umassdining.png',
         name: 'UMasss Dining'
       },
