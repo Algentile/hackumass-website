@@ -157,7 +157,12 @@ services.service('SponsorsService', function(){
   			link: 'https://www.smartuplegal.com/',
   			image_url: 'assets/img/logos/smartup.png',
   			name: 'SmartUp Legal'
-  		}
+  		},
+      {
+        link: 'https://www.amd.com/',
+        image_url: 'assets/img/logos/amd.png',
+        name: 'AMD'
+      }
 		]
 	}
 	this.getMediumLogos = function(){
@@ -230,6 +235,11 @@ services.service('SponsorsService', function(){
         link: 'https://http://www.umassdining.com/',
         image_url: 'assets/img/logos/umassdining.png',
         name: 'UMasss Dining'
+      },
+      {
+        link: 'http://ieee.org/',
+        image_url: 'assets/img/logos/ieee.png',
+        name: 'IEEE'
       },
       {
         link: 'http://umassamherstm5.org/',
