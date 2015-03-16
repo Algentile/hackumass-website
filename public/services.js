@@ -242,6 +242,11 @@ services.service('SponsorsService', function(){
         name: 'IEEE'
       },
       {
+        link: 'https://www.cs.umass.edu/',
+        image_url: 'assets/img/logos/umasscs.png',
+        name: 'UMass School of Computer Science'
+      },
+      {
         link: 'http://umassamherstm5.org/',
         image_url: 'assets/img/logos/m5.png',
         name: 'UMasss Amherst M5'
