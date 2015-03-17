@@ -221,6 +221,11 @@ services.service('SponsorsService', function(){
         link: 'http://aws.amazon.com/',
         image_url: 'assets/img/logos/aws.png',
         name: 'Amazon Web Services'
+      },
+      {
+        link: 'http://namecheap.com/',
+        image_url: 'assets/img/logos/namecheap.png',
+        name: 'Namecheap'
       }
 		]
 	}
