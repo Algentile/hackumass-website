@@ -19,7 +19,7 @@ services.service('FaqService', function(){
     return [
       {
         question: 'Where is it?',
-        answer: 'HackUMass 2015 will take place at the Mullins Center, the biggest and most popular indoors venue on campus, with ample space and parking.'
+        answer: 'HackUMass 2015 will take place at the <a href="http://goo.gl/rkRvFS">Integrative Learning Center</a>, the newest venue on campus, with robust WiFi and ample space.'
       },
       {
         question: 'Who\'s coming?',
