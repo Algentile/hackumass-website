@@ -216,6 +216,11 @@ services.service('SponsorsService', function(){
         link: 'https://www.twilio.com/',
         image_url: 'assets/img/logos/twilio.png',
         name: 'Twilio'
+      },
+      {
+        link: 'http://aws.amazon.com/',
+        image_url: 'assets/img/logos/aws.png',
+        name: 'Amazon Web Services'
       }
 		]
 	}
