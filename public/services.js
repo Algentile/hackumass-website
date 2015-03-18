@@ -137,6 +137,11 @@ services.service('SponsorsService', function(){
         link: 'http://www.mashery.com/',
         image_url: 'assets/img/logos/mashery.png',
         name: 'Mashery'
+      },
+      {
+        link: 'http://smartertravel.com/',
+        image_url: 'assets/img/logos/smartertravel.png',
+        name: 'SmarterTravel'
       }
     ]
   }
