@@ -229,7 +229,7 @@ services.service('SponsorsService', function(){
       },
       {
         link: 'http://microsoft.com//',
-        image_url: 'assets/img/logos/nmicrosoft.png',
+        image_url: 'assets/img/logos/microsoft.png',
         name: 'Microsoft'
       }
 		]
