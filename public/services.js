@@ -226,6 +226,11 @@ services.service('SponsorsService', function(){
         link: 'http://namecheap.com/',
         image_url: 'assets/img/logos/namecheap.png',
         name: 'Namecheap'
+      },
+      {
+        link: 'http://microsoft.com//',
+        image_url: 'assets/img/logos/nmicrosoft.png',
+        name: 'Microsoft'
       }
 		]
 	}
