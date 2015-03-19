@@ -14,12 +14,12 @@ services.service('AboutService', function(){
   };
 });
 
-services.service('FaqService', function(){
+services.service('FaqService', function($sce){
   this.getPanels = function(){
     return [
       {
         question: 'Where is it?',
-        answer: 'HackUMass 2015 will take place at the Integrative Learning Center, the newest venue on campus, with robust WiFi and ample space.'
+        answer: $sce.trustAsHtml('HackUMass 2015 will take place at the <a href="http://goo.gl/YGbnx2"><Integrative Learning Center</a>, the newest venue on campus, with robust WiFi and ample space.')
       },
       {
         question: 'Who\'s coming?',
@@ -167,6 +167,11 @@ services.service('SponsorsService', function(){
         link: 'https://www.amd.com/',
         image_url: 'assets/img/logos/amd.png',
         name: 'AMD'
+      },
+      {
+        link: 'https://www.indico.io/',
+        image_url: 'assets/img/logos/indico.png',
+        name: 'Indico'
       }
 		]
 	}
