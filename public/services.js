@@ -19,7 +19,7 @@ services.service('FaqService', function($sce){
     return [
       {
         question: 'Where is it?',
-        answer: $sce.trustAsHtml('HackUMass 2015 will take place at the <a href="http://goo.gl/YGbnx2"><Integrative Learning Center</a>, the newest venue on campus, with robust WiFi and ample space.')
+        answer: $sce.trustAsHtml('HackUMass 2015 will take place at the <a href="http://goo.gl/YGbnx2">Integrative Learning Center</a>, the newest venue on campus, with robust WiFi and ample space.')
       },
       {
         question: 'Who\'s coming?',
