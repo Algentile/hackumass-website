@@ -55,9 +55,7 @@ services.service('FaqService', function($sce){
       },
       {
         question: 'Will you be providing travel reimbursements?',
-        answer: $sce.trustAsHtml('Yes we will! We are currently working to provide buses for participants coming from high demand areas such as Boston, MA, Worcester, MA, Providence, RI, and Troy, NY. If you are traveling to UMass and are not from one of the above locations, we will also be offering travel reimbursements on a case-by-case basis for those interested in flying in, taking the train or a bus, or driving by car. Please carefully review and submit <a href="http://goo.gl/BuFMFN">this form</a> if you are interested in pursuing travel reimbursements.
-
-          We\'re going to try our hardest! We’ll be posting more details soon.')
+        answer: $sce.trustAsHtml('Yes we will! We are currently working to provide buses for participants coming from high demand areas such as Boston, MA, Worcester, MA, Providence, RI, and Troy, NY. If you are traveling to UMass and are not from one of the above locations, we will also be offering travel reimbursements on a case-by-case basis for those interested in flying in, taking the train or a bus, or driving by car. Please carefully review and submit <a href="http://goo.gl/BuFMFN">this form</a> if you are interested in pursuing travel reimbursements.')
       }
     ];
   };
