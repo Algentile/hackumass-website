@@ -134,6 +134,11 @@ services.service('SponsorsService', function(){
   this.getXLargeLogos = function(){
     return [
       {
+        link: 'https://www.bose.com/',
+        image_url: 'assets/img/logos/bose.png',
+        name: 'Bose'
+      },
+      {
         link: 'http://www.mashery.com/',
         image_url: 'assets/img/logos/mashery.png',
         name: 'Mashery'
@@ -142,6 +147,11 @@ services.service('SponsorsService', function(){
         link: 'http://smartertravel.com/',
         image_url: 'assets/img/logos/smartertravel.png',
         name: 'SmarterTravel'
+      },
+      {
+        link: 'https://www.mitre.org/',
+        image_url: 'assets/img/logos/mitre.png',
+        name: 'MITRE'
       }
     ]
   }
@@ -158,11 +168,6 @@ services.service('SponsorsService', function(){
   			image_url: 'assets/img/logos/google.png',
   			name: 'Google'
   		},
-  		{
-  			link: 'https://www.smartuplegal.com/',
-  			image_url: 'assets/img/logos/smartup.png',
-  			name: 'SmartUp Legal'
-  		},
       {
         link: 'https://www.amd.com/',
         image_url: 'assets/img/logos/amd.png',
@@ -172,6 +177,26 @@ services.service('SponsorsService', function(){
         link: 'https://www.indico.io/',
         image_url: 'assets/img/logos/indico.png',
         name: 'Indico'
+      },
+      {
+        link: 'https://www.verizon.com/',
+        image_url: 'assets/img/logos/verizon.png',
+        name: 'Verizon'
+      },
+      {
+        link: 'https://www.nvidia.com/',
+        image_url: 'assets/img/logos/nvidia.png',
+        name: 'NVIDIA'
+      },
+      {
+        link: 'https://www.lutron.com/',
+        image_url: 'assets/img/logos/lutron.png',
+        name: 'Lutron'
+      },
+      {
+        link: 'https://www.autodesk.com/',
+        image_url: 'assets/img/logos/autodesk.png',
+        name: 'Autodesk'
       }
 		]
 	}
@@ -181,6 +206,11 @@ services.service('SponsorsService', function(){
         link: 'https://tessel.io/',
         image_url: 'assets/img/logos/tessel.png',
         name: 'Tessel'
+      },
+      {
+        link: 'https://www.smartuplegal.com/',
+        image_url: 'assets/img/logos/smartup.png',
+        name: 'SmartUp Legal'
       },
       {
         link: 'https://www.stickermule.com/',
@@ -238,9 +268,34 @@ services.service('SponsorsService', function(){
         name: 'Namecheap'
       },
       {
-        link: 'http://microsoft.com//',
+        link: 'http://microsoft.com/',
         image_url: 'assets/img/logos/microsoft.png',
         name: 'Microsoft'
+      },
+      {
+        link: 'http://hackerrank.com/',
+        image_url: 'assets/img/logos/hackerrank.png',
+        name: 'HackerRank'
+      },
+      {
+        link: 'http://cyberark.com/',
+        image_url: 'assets/img/logos/cyberark.png',
+        name: 'CyberArk'
+      },
+      {
+        link: 'http://longriverventures.com/',
+        image_url: 'assets/img/logos/longriver.png',
+        name: 'Long River Ventures'
+      },
+      {
+        link: 'http://mathworks.com/',
+        image_url: 'assets/img/logos/mathworks.png',
+        name: 'MathWorks'
+      },
+      {
+        link: 'http://gaggleamp.com/',
+        image_url: 'assets/img/logos/gaggleamp.png',
+        name: 'GaggleAMP'
       }
 		]
 	}
