@@ -139,6 +139,11 @@ services.service('SponsorsService', function(){
         name: 'Bose'
       },
       {
+        link: 'https://www.mitre.org/',
+        image_url: 'assets/img/logos/mitre.png',
+        name: 'MITRE'
+      },
+      {
         link: 'http://www.mashery.com/',
         image_url: 'assets/img/logos/mashery.png',
         name: 'Mashery'
@@ -147,11 +152,6 @@ services.service('SponsorsService', function(){
         link: 'http://smartertravel.com/',
         image_url: 'assets/img/logos/smartertravel.png',
         name: 'SmarterTravel'
-      },
-      {
-        link: 'https://www.mitre.org/',
-        image_url: 'assets/img/logos/mitre.png',
-        name: 'MITRE'
       }
     ]
   }
@@ -184,7 +184,7 @@ services.service('SponsorsService', function(){
         name: 'Verizon'
       },
       {
-        link: 'https://www.nvidia.com/',
+        link: 'http://www.nvidia.com/page/home.html',
         image_url: 'assets/img/logos/nvidia.png',
         name: 'NVIDIA'
       },
@@ -194,7 +194,7 @@ services.service('SponsorsService', function(){
         name: 'Lutron'
       },
       {
-        link: 'https://www.autodesk.com/',
+        link: 'http://www.autodesk.com/',
         image_url: 'assets/img/logos/autodesk.png',
         name: 'Autodesk'
       }
