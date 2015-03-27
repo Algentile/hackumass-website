@@ -296,6 +296,11 @@ services.service('SponsorsService', function(){
         link: 'http://gaggleamp.com/',
         image_url: 'assets/img/logos/gaggleamp.png',
         name: 'GaggleAMP'
+      },
+      {
+        link: 'http://unity3d.com/',
+        image_url: 'assets/img/logos/unity.png',
+        name: 'Unity'
       }
 		]
 	}
