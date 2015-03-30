@@ -197,6 +197,11 @@ services.service('SponsorsService', function(){
         link: 'http://www.autodesk.com/',
         image_url: 'assets/img/logos/autodesk.png',
         name: 'Autodesk'
+      },
+      {
+        link: 'http://www.ll.mit.edu/',
+        image_url: 'assets/img/logos/mitll.png',
+        name: 'MIT Lincoln Laboratory'
       }
 		]
 	}
