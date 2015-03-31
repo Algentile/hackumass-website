@@ -40,6 +40,7 @@ controllers.controller('SponsorsCtrl', ['$scope', '$sce', 'SponsorsService',
   	$scope.xlargelogos = SponsorsService.getXLargeLogos();
     $scope.largelogos = SponsorsService.getLargeLogos();
   	$scope.mediumlogos = SponsorsService.getMediumLogos();
+    $scope.smallogos = SponsorsService.getSmallLogos();
   	$scope.partnerlogos = SponsorsService.getPartnerLogos();
   }
 ]);

@@ -255,6 +255,11 @@ table tr td:nth-child(2) {
   padding: 10px;
 }
 
+.logos .xlarge img {
+  margin: 12px auto 12px auto;
+  width: 750px;
+}
+
 .logos .large img {
 	margin: 12px auto 12px auto;
 	width: 375px;

@@ -131,7 +131,17 @@ services.service('ScheduleService', function(){
 });
 
 services.service('SponsorsService', function(){
-  this.getXLargeLogos = function(){
+  this.getXLargeLogos = function() {
+    return [
+      {
+        link: 'https://www.ibm.com/',
+        image_url: 'assets/img/logos/ibm.png',
+        name: 'IBM'
+      }
+    ]
+  }
+
+  this.getLargeLogos = function(){
     return [
       {
         link: 'https://www.bose.com/',
@@ -156,7 +166,7 @@ services.service('SponsorsService', function(){
     ]
   }
 
-	this.getLargeLogos = function(){
+	this.getMediumLogos = function(){
 		return [
       {
   			link: 'http://cimpress.com/',
@@ -205,7 +215,7 @@ services.service('SponsorsService', function(){
       }
 		]
 	}
-	this.getMediumLogos = function(){
+	this.getSmallLogos = function(){
 		return [
       {
         link: 'https://tessel.io/',
@@ -309,6 +319,7 @@ services.service('SponsorsService', function(){
       }
 		]
 	}
+
 	this.getPartnerLogos = function(){
 		return [
   		{
