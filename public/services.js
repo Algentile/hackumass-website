@@ -346,6 +346,11 @@ services.service('SponsorsService', function(){
         link: 'http://umassamherstm5.org/',
         image_url: 'assets/img/logos/m5.png',
         name: 'UMasss Amherst M5'
+      },
+      {
+        link: 'http://www.arm.com/support/university/index.php',
+        image_url: 'assets/img/logos/arm.png',
+        name: 'ARM University Program'
       }
 		]
 	}
