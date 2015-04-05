@@ -316,6 +316,11 @@ services.service('SponsorsService', function(){
         link: 'http://unity3d.com/',
         image_url: 'assets/img/logos/unity.png',
         name: 'Unity'
+      },
+      {
+        link: 'http://www.shapeways.com/',
+        image_url: 'assets/img/logos/shapeways.png',
+        name: 'Shapeways'
       }
 		]
 	}
