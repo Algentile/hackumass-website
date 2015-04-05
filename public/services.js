@@ -321,6 +321,11 @@ services.service('SponsorsService', function(){
         link: 'http://www.shapeways.com/',
         image_url: 'assets/img/logos/shapeways.png',
         name: 'Shapeways'
+      },
+      {
+        link: 'http://www.techspringhealth.org/',
+        image_url: 'assets/img/logos/techspring.png',
+        name: 'TechSpring'
       }
 		]
 	}
