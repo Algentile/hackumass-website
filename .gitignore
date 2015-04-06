@@ -22,3 +22,4 @@ public/assets/fonts/FontAwesome.otf
 # Misc
 # --------------------
 Thumbs.db
+.DS_Store
