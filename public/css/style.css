@@ -282,14 +282,9 @@ table tr td:nth-child(2) {
 	transition-duration: 0.5s;
 	transition-timing-function: initial;
 	transition-delay: initial;
-	/*opacity: 0.5;*/
 	vertical-align: middle;
 }
-/*
-.sponsors img:hover {
-  opacity: 1;
-}
-*/
+
 
 
 /*Breakpoints*/

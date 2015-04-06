@@ -162,6 +162,11 @@ services.service('SponsorsService', function(){
         link: 'http://smartertravel.com/',
         image_url: 'assets/img/logos/smartertravel.png',
         name: 'SmarterTravel'
+      },
+      {
+        link: 'http://www.tripadvisor.com/',
+        image_url: 'assets/img/logos/tripadvisor.png',
+        name: 'TripAdvisor'
       }
     ]
   }
