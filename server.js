@@ -4,12 +4,9 @@ var express = require('express');
 var app = express();
 
 var favicon = require('serve-favicon');
-var mongoose = require('mongoose');
 var path = require('path');
 
 var environment = require('./config/environment.js')[process.env.NODE_ENV || 'development'];
-
-//mongoose.connect(environment.db);
 
 //views and templating engine
 app.set('views', path.join(__dirname, '/server/views'));
