@@ -76,7 +76,7 @@ services.service('ScheduleService', function(){
             action:  'Check in, breakfast, and team building'
           },
           {
-            time: '10 AM',
+            time: '10 AM - 11 AM',
             action: 'Opening ceremony'
           },
           {
@@ -88,12 +88,56 @@ services.service('ScheduleService', function(){
             action: 'Lunch'
           },
           {
+            time: '2 PM - 3 PM',
+            action: 'Indico Tech Talk'
+          },
+          {
+            time: '2 PM - 3 PM',
+            action: 'Intel Tech Talk'
+          },
+          {
+            time: '3 PM - 4 PM',
+            action: 'TripAdvisor Tech Talk'
+          },
+          {
+            time: '3 PM - 5 PM',
+            action: 'Autodesk Tech Talk'
+          },
+          {
+            time: '4 PM - 5 PM',
+            action: 'Christof Paar Tech Talk'
+          },
+          {
             time: '4 PM',
             action:  'Snack'
           },
           {
+            time: '5 PM - 6 PM',
+            action: 'SmarterTravel Tech Talk'
+          },
+          {
+            time: '5 PM - 6 PM',
+            action: 'MITRE Tech Talk'
+          },
+          {
+            time: '6 PM - 7 PM',
+            action: 'IBM Tech Talk 1'
+          },
+          {
             time: '7 PM',
             action:  'Dinner'
+          },
+          {
+            time: '8 PM - 9 PM',
+            action: 'BOSE Tech Talk'
+          },
+          {
+            time: '8 PM - 9 PM',
+            action: 'GaggleAMP Tech Talk'
+          },
+          {
+            time: '9 PM - 10 PM',
+            action: 'IBM Tech Talk 2'
           },
           {
             time: '12 AM',
@@ -111,6 +155,10 @@ services.service('ScheduleService', function(){
           {
             time: '8 AM',
             action:  'Breakfast'
+          },
+          {
+            time: '12 PM - 1 PM',
+            action: 'Long River Ventures Tech Talk'
           },
           {
             time: '1 PM',
