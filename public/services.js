@@ -223,18 +223,18 @@ services.service('SponsorsService', function(){
     ];
   };
 
-	this.getMediumLogos = function(){
-		return [
+  this.getMediumLogos = function(){
+    return [
       {
-  			link: 'http://cimpress.com/',
-  			image_url: 'assets/img/logos/cimpress.png',
-  			name: 'Cimpress'
+        link: 'http://cimpress.com/',
+        image_url: 'assets/img/logos/cimpress.png',
+        name: 'Cimpress'
       },
-  		{
-  			link: 'https://www.google.com/',
-  			image_url: 'assets/img/logos/google.png',
-  			name: 'Google'
-  		},
+      {
+        link: 'https://www.google.com/',
+        image_url: 'assets/img/logos/google.png',
+        name: 'Google'
+      },
       {
         link: 'https://www.amd.com/',
         image_url: 'assets/img/logos/amd.png',
@@ -270,11 +270,11 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/mitll.png',
         name: 'MIT Lincoln Laboratory'
       }
-		];
-	};
+    ];
+  };
 
-	this.getSmallLogos = function(){
-		return [
+  this.getSmallLogos = function(){
+    return [
       {
         link: 'https://tessel.io/',
         image_url: 'assets/img/logos/tessel.png',
@@ -305,11 +305,11 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/attend.png',
         name: 'Attend.com'
       },
-  		{
-  			link: 'https://www.facebook.com/',
-  			image_url: 'assets/img/logos/facebook.png',
-  			name: 'Facebook'
-  		},
+      {
+        link: 'https://www.facebook.com/',
+        image_url: 'assets/img/logos/facebook.png',
+        name: 'Facebook'
+      },
       {
         link: 'https://www.kloudless.com/',
         image_url: 'assets/img/logos/kloudless.png',
@@ -385,21 +385,21 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/techspring.png',
         name: 'TechSpring'
       }
-		];
-	};
+    ];
+  };
 
-	this.getPartnerLogos = function(){
-		return [
-  		{
-  			link: 'https://mlh.io/',
-  			image_url: 'assets/img/logos/mlh.png',
-  			name: 'Major League Hacking'
-  		},
-  		{
-  			link: 'https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
-  			image_url: 'assets/img/logos/c4e.png',
-  			name: 'Berthiaume Center for Entrepreneurship'
-  		},
+  this.getPartnerLogos = function(){
+    return [
+      {
+        link: 'https://mlh.io/',
+        image_url: 'assets/img/logos/mlh.png',
+        name: 'Major League Hacking'
+      },
+      {
+        link: 'https://www.isenberg.umass.edu/centers/berthiaume-center-for-entrepreneurship',
+        image_url: 'assets/img/logos/c4e.png',
+        name: 'Berthiaume Center for Entrepreneurship'
+      },
       {
         link: 'http://www.umassdining.com/',
         image_url: 'assets/img/logos/umassdining.png',
@@ -420,8 +420,8 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/arm.png',
         name: 'ARM University Program'
       }
-		];
-	};
+    ];
+  };
 });
 
 services.service('ResourcesService', function(){
@@ -534,5 +534,57 @@ services.service('ResourcesService', function(){
         ]
       }
     ];
+  };
+});
+
+services.service('PrizesService', function(){
+
+  this.getPrizes = function(){
+    return [
+      {
+        "category": "Finalist (8 Prizes)",
+        "reward": "Each member of the 8 finalist teams will receive one NVIDIA SHEILD, courtesy of NVIDIA"
+      },
+      {
+        "category": "Champion (3 Prizes)",
+        "reward": "Each member of the 3 champion teams will receive a Myo and Pebble Steel, courtesy of the HackUMass Team"
+      },
+      {
+        "category": "IBM Bluemix Innovation Award",
+        "reward": "$12K in IBM Cloud Credits. Also be fast tracked into the MassChallenge startup incubator!"
+      },
+      {
+        "category": "Best Use of TripAdvisor API",
+        "reward": "TripAdvisor will award up to 4 Dell Chromebook to the team that best uses TripAdvisor API"
+      },
+      {
+        "category": "Best UMass Dining Hack",
+        "reward": "UMass Dining will award their top prize to the best hack related to instant customer feedback and interaction, dining analytics, and/or location based promotions. Design, App UI/UX, and dashboard layout are all things that will be part of the hack, as people will aim to build complete apps around the features. There will be $200 Visa gift card per team member."
+      },
+      {
+        "category": "Health Prize Category",
+        "reward": "Prizes will be awarded in 3 health related categories. Details can be found at http://www.techspringhealth.org/hackumass"
+      },
+      {
+        "category": "Best Use of Machine Learning",
+        "reward": "Indico will award Machine generated portraits and 1 million free API calls to the team that makes the best Machine Learning Hack"
+      },
+      {
+        "category": "Best use of Google API",
+        "reward": "Google will award Chromecasts and swag to the team with the best hack using Google API, Hardware or Tool (including cardboard)"
+      },
+      {
+        "category": "Best use of Edison",
+        "reward": "Intel will reward 2 Anki Drive & 2 Parrot Mini Drones to the team that has the best utilization of Intel Edison"
+      },
+      {
+        "category": "Best use of Fusion 360",
+        "reward": "Autodesk will award a duffle bag full of swag to the team that has the best utilization of Autodesk Fusion 360"
+      },
+      {
+        "category": "Communication Innovation",
+        "reward": "Each team member will receive a glass trophy and a $50 gift card, courtesy of Verizon Wireless."
+      }
+    ]
   };
 });

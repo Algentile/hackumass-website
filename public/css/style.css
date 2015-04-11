@@ -57,6 +57,7 @@ button:focus {
   outline: none;
   letter-spacing: 1px;
   font-weight: 700;
+  margin-bottom: 10px;
   z-index: 1;
   background: none;
   text-align: center;

@@ -47,6 +47,16 @@ controllers.controller('SponsorsCtrl', ['$scope', '$sce', 'SponsorsService',
 
 controllers.controller('ResourcesCtrl', ['$scope', 'ResourcesService',
   function($scope, ResourcesService) {
+    $scope.title = 'Resources'
+
     $scope.resources = ResourcesService.getResources();
+  }
+]);
+
+controllers.controller('PrizesCtrl', ['$scope', 'PrizesService',
+  function($scope, PrizesService) {
+    $scope.title = 'Prizes'
+
+    $scope.prizes = PrizesService.getPrizes();
   }
 ]);
