@@ -15,17 +15,22 @@ directives.directive('countdown', function(){
         var eventDate = new moment('2015-04-11 08:00:00'),
             now = new moment();
 
-        var months = eventDate.diff(now, 'months');
-        eventDate.subtract(months, 'months');
-        var days = eventDate.diff(now, 'days');
-        eventDate.subtract(days, 'days');
-        var hours = normalizeTime(eventDate.diff(now, 'hours'));
-        eventDate.subtract(hours, 'hours');
-        var minutes = normalizeTime(eventDate.diff(now, 'minutes'));
-        eventDate.subtract(minutes, 'minutes');
-        var seconds = normalizeTime(eventDate.diff(now, 'seconds'));
+        if(now.isAfter(eventDate)){
+          element.html('<h5>0 Months, Days, 00:00:00</h5>');
+        } else {
+          var months = eventDate.diff(now, 'months');
+          eventDate.subtract(months, 'months');
+          var days = eventDate.diff(now, 'days');
+          eventDate.subtract(days, 'days');
+          var hours = normalizeTime(eventDate.diff(now, 'hours'));
+          eventDate.subtract(hours, 'hours');
+          var minutes = normalizeTime(eventDate.diff(now, 'minutes'));
+          eventDate.subtract(minutes, 'minutes');
+          var seconds = normalizeTime(eventDate.diff(now, 'seconds'));
 
-        element.html('<h5>' + months + ' Months, ' + days + ' Days, ' + hours + ':' + minutes + ':' + seconds + '</h5>');
+          element.html('<h5>' + months + ' Months, ' + days + ' Days, ' + hours + ':' + minutes + ':' + seconds + '</h5>');
+        }
+
       }
 
       countdown();

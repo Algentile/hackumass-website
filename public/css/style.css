@@ -232,22 +232,22 @@ table tr td:nth-child(2) {
   color: #fff;
 }
 
-.social-media {
+.social-media a, .mobile-app a {
   font-size: 3em;
   letter-spacing: 10px;
   padding-bottom: 25px;
 }
-
 .fa-facebook:hover {
   color: #3b5998;
 }
 .fa-twitter:hover {
   color: #4099FF;
 }
-
-#registration-information {
-  color: #ffffff;
-  text-align: center;
+.fa-android:hover {
+  color: #A4C639;
+}
+.fa-apple:hover {
+  color: #a5adb0;
 }
 
 .sponsors ul{
