@@ -18,6 +18,11 @@ h1 {
   font-weight: bold;
 }
 
+img.center {
+  display: block;
+  margin: 12px auto 12px auto;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -288,7 +293,9 @@ table tr td:nth-child(2) {
 	vertical-align: middle;
 }
 
-
+.resources ul {
+  list-style-type: none;
+}
 
 /*Breakpoints*/
 @media (max-width: 768px) {

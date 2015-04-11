@@ -53,5 +53,5 @@ directives.directive('toggleSibling', function(){
         }
       });
     }
-  }
-})
+  };
+});

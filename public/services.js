@@ -142,8 +142,8 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/ibm.png',
         name: 'IBM'
       }
-    ]
-  }
+    ];
+  };
 
   this.getLargeLogos = function(){
     return [
@@ -172,8 +172,8 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/tripadvisor.png',
         name: 'TripAdvisor'
       }
-    ]
-  }
+    ];
+  };
 
 	this.getMediumLogos = function(){
 		return [
@@ -222,8 +222,9 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/mitll.png',
         name: 'MIT Lincoln Laboratory'
       }
-		]
-	}
+		];
+	};
+
 	this.getSmallLogos = function(){
 		return [
       {
@@ -336,8 +337,8 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/techspring.png',
         name: 'TechSpring'
       }
-		]
-	}
+		];
+	};
 
 	this.getPartnerLogos = function(){
 		return [
@@ -371,6 +372,119 @@ services.service('SponsorsService', function(){
         image_url: 'assets/img/logos/arm.png',
         name: 'ARM University Program'
       }
-		]
-	}
+		];
+	};
+});
+
+services.service('ResourcesService', function(){
+  this.getResources = function(){
+    return [
+      {
+        category: 'MicroProcessors',
+        items: [
+          'Adruino Uno',
+          'Beagleboard Rev C',
+          'Raspberry Pi 2',
+          'LightBlue Bean',
+          'NUCLEO-F401RE'
+        ]
+      },
+      {
+        category: 'Electronic Components',
+        items: [
+          '9V Power Batteries',
+          'Male Header Pins',
+          'SD Cards',
+          'Inverter',
+          'AND Gate',
+          'OR Gate',
+          '555 Timer',
+          'NPN BJT',
+          'PNP BJT',
+          'OP-AMP',
+          'Diode',
+          'FET Array',
+          'Wires',
+          'Breadboards',
+          'Jumper Cables',
+          'Resistors'
+        ]
+      },
+      {
+        category: 'Sensors',
+        items: [
+          'Optical Detector / Phototransistor',
+          'Piezo Element',
+          'Tilt Sensor',
+          'Infrared Emitters and Detectors',
+          'Piezo Vibration Sensor - Large',
+          'Light to Frequency Converter',
+          'Softpot Rotary Potentiometer',
+          'Flex Sensor 4.5"',
+          '4-Way Tilt Sensor',
+          'Photo Interrupter',
+          'RGB and Gesture Sensor',
+          'Load Sensor - 50kg',
+          'Triple Axis Magnetometer',
+          'Pulse Sensor',
+          'Ultrasonic Range Finder - LV-MaxSonar-EZ1',
+          'Hall Effect Sensor',
+          'SparkFun Ambient Light Sensor Breakout',
+          'Ultrasonic Distance Sensor',
+          'Temp Sensor Breakout TMP102',
+          'Force-Sensing Resistor (circle)',
+          'Gyro, Accel, Compass (IMU)'
+        ]
+      },
+      {
+        category: 'Cameras',
+        items: [
+          'Raspberry Pi Cam'
+        ]
+      },
+      {
+        category: 'Speakers',
+        items: [
+          'Piezo Speaker - PC Mount 12mm 2.048kHz',
+          '8-ohm Speakers'
+        ]
+      },
+      {
+        category: 'Motors',
+        items: [
+          'Mini DC Motor',
+          'Servo Motor',
+          'Vibration Motor'
+        ]
+      },
+      {
+        category: 'Displays/LEDs',
+        items: [
+          'Basic 16x2 Character LCD - White on Black 5V',
+          'LED Matrix IC',
+          'LED RGB Strip - Addressable, Sealed (1m)',
+          'SparkFun Micro OLED Breakout',
+          'Lots of misc LEDs'
+        ]
+      },
+      {
+        category: 'Others',
+        items: [
+          'Miniature Solar Cell',
+          'Solenoid - 5v (small)',
+          'SparkFun Logic Level Converter - Bi-Directional',
+          'Microphone',
+          'ARM mBed',
+          'LM380 Audio Amp IC',
+          'XBee Wireless Kit',
+          'Leap Motion',
+          'Oculus Rift',
+          'Myo',
+          'Pebble',
+          'Tessel',
+          'Sparkcore'
+        ]
+      }
+    ];
+  };
 });

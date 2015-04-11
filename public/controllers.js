@@ -44,3 +44,9 @@ controllers.controller('SponsorsCtrl', ['$scope', '$sce', 'SponsorsService',
   	$scope.partnerLogos = SponsorsService.getPartnerLogos();
   }
 ]);
+
+controllers.controller('ResourcesCtrl', ['$scope', 'ResourcesService',
+  function($scope, ResourcesService) {
+    $scope.resources = ResourcesService.getResources();
+  }
+]);

@@ -2,6 +2,27 @@
 <html>
   <% include includes/head.ejs %>
   <body ng-app="hackumass-website">
-    
+    <section class="resources" ng-controller="ResourcesCtrl">
+      <div class="row">
+        <img class="center" src="assets/img/logo.png" style="width:200px;">
+      </div>
+
+      <div class="row">
+        <br/>
+        <h2 class="text-center">Resources</h2>
+        <a href="/" style="float:right">Go Back</a>
+        <br/>
+        <hr>
+
+        <div class="row" ng-repeat="resource in resources">
+          <h3>{{resource.category}}</h3>
+          <ul>
+            <li ng-repeat="item in resource.items">{{item}}</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <% include includes/foot.ejs %>
   </body>
 </html>
