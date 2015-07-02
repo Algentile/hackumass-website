@@ -12,7 +12,7 @@ directives.directive('countdown', function(){
       }
 
       function countdown() {
-        var eventDate = new moment('2015-04-11 08:00:00'),
+        var eventDate = new moment('2015-10-23 22:00:00'),
             now = new moment();
 
         if(now.isAfter(eventDate)){

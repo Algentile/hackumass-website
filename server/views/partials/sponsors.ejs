@@ -1,45 +1,15 @@
 <!--Sponsors-->
 <section class="alternate text-center sponsors" ng-controller="SponsorsCtrl">
-  <h1>{{title}}</h1>
-  <div class="logos">
-    <ul class="xlarge">
-      <li ng-repeat="logo in xLargeLogos">
-        <a href={{logo.link}} target="_blank">
-          <img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
-        </a>
-      </li>
-    </ul>
-		<ul class="large">
-      <li ng-repeat="logo in largeLogos">
-        <a href={{logo.link}} target="_blank">
-          <img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
-        </a>
-      </li>
-    </ul>
-    <ul class="medium">
-			<li ng-repeat="logo in mediumLogos">
-				<a href={{logo.link}} target="_blank">
-				  <img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
-				</a>
-			</li>
-		</ul>
-		<ul class="small">
-			<li ng-repeat="logo in smallLogos">
-				<a href={{logo.link}} target="_blank">
-				  <img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
-				</a>
-			</li>
-		</ul>
-    <br><br>
-		<h1>{{subtitle}}</h1>
-		<ul class="medium">
-			<li ng-repeat="logo in partnerLogos">
-				<a href={{logo.link}} target="_blank">
-				  <img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
-				</a>
-			</li>
-		</ul>
-  </div>
-  <p id="sponsor" ng-bind-html="email"></p>
-
+<h1>{{subtitle}}</h1>
+<div class="logos">
+	<ul class="medium">
+		<li ng-repeat="logo in partnerLogos">
+			<a href={{logo.link}} target="_blank">
+				<img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
+			</a>
+		</li>
+	</ul>
+</div>
+<h1>{{title}}</h1>
+<p id="sponsor" ng-bind-html="email"></p>
 </section>
