@@ -72,7 +72,7 @@ services.service('SponsorsService', function(){
     return [
       {
         link: 'https://mlh.io/',
-        image_url: 'assets/img/logos/mlh.png',
+	image_url: 'http://static.mlh.io/brand-assets/logo/mlh-logo.png',
         name: 'Major League Hacking'
       },
     ];
