@@ -7,6 +7,7 @@
     "foundation": "~5.4.7",
     "jquery": "2.1.x",
     "moment": "~2.8.4",
-    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git"
+    "smooth-scroll": "https://github.com/cferdinandi/smooth-scroll.git",
+    "ajaxchimp": "latest"
   }
 }

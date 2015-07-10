@@ -10,6 +10,14 @@
     <% include partials/sponsors.ejs %>
 
     <footer class="text-center">
+	<h1>Want updates?</h1>
+	<div class="row">
+		<form id="mailing-list-form">
+			<input id="mailing-list-email" type="email" placeholder="What's your email?">
+			<label for="mailing-list-email"></label>
+			<button class="transparent-btn wipe-btn" type="submit">SIGN ME UP</button>
+		</form>
+	</div>
       <div class="row">
           <h6>Helpful Links</h6>
           <a href="http://hackumass-ii.challengepost.com/">HackUMass II ChallengePost</a><br>
@@ -27,6 +35,15 @@
     </div>
 
     <script>
+	$(document).ready(function () {
+		// Enable MailChimp mailing list signup via AJAX.
+		$('#mailing-list-form').ajaxChimp({
+			url: 'http://hackUMass.us3.list-manage1.com/subscribe/post?u=916da75d92b720d21cf48bafe&id=3167bdd032'
+		});
+		$('#sponsor-anchor').on('click', function(){
+			blink($('#sponsor'), 1500);
+		});
+	});
     //TODO: YEAH, LETS REFACTOR THIS LATER
 
     //i am ashamed of myself
@@ -38,51 +55,6 @@
           .fadeTo(200, 0.05)
           .fadeTo(200, 1)
       }, timeout);
-    }
-
-    $('#attend-anchor').on('click', function(){
-      blink($('#mc-embedded-subscribe-form'), 1500);
-    });
-
-    $('#sponsor-anchor').on('click', function(){
-      blink($('#sponsor'), 1500);
-    });
-
-    $('#mc-embedded-subscribe-form').submit(function(e){
-      e.preventDefault();
-      submitSubscribeForm($('#mc-embedded-subscribe-form'));
-    });
-    function submitSubscribeForm($form) {
-      $.ajax({
-        type: "GET",
-        url: $form.attr("action"),
-        data: $form.serialize(),
-        cache: false,
-        dataType: "jsonp",
-        jsonp: "c", // trigger MailChimp to return a JSONP response
-        contentType: "application/json; charset=utf-8",
-
-        success: function(data){
-          var resultMessage = data.msg || "Sorry. Unable to subscribe. Please try again later.";
-          var textColor = '#D94B3F';
-
-          if (data.result != "success") {
-            if (data.msg && data.msg.indexOf("already subscribed") >= 0) {
-              resultMessage = "You're already subscribed. Thanks!";
-              textColor = '#00cc00';
-            }
-          } else {
-            resultMessage = "All your email are belong to us. (If you just confirm your email, thanks!)";
-            textColor = '#00cc00';
-          }
-
-          $('.msg-box').css('color', textColor).text(resultMessage);
-
-          setTimeout(function(){
-            $('.msg-box').text('');
-          }, 5000);
-        }
-      });
     }
     </script>
 
