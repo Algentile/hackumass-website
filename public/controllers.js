@@ -22,11 +22,20 @@ controllers.controller('FaqCtrl', ['$scope', 'FaqService',
   }
 ]);
 
+controllers.controller('PartnersCtrl', ['$scope', 'PartnersService',
+  function($scope, PartnersService) {
+    $scope.partnersTitle = 'Partners';
+  	$scope.partners = PartnersService.getPartners();
+  }
+]);
+
 controllers.controller('SponsorsCtrl', ['$scope', '$sce', 'SponsorsService',
   function($scope, $sce, SponsorsService) {
-    $scope.title = 'Sponsors';
-  	$scope.subtitle = 'Partners';
-    $scope.email = $sce.trustAsHtml('Interested in sponsoring HackUMass? Email us at <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>');
-  	$scope.partnerLogos = SponsorsService.getPartnerLogos();
+    $scope.sponsorsTitle = 'Sponsors';
+    $scope.sponsorsEmail = $sce.trustAsHtml('Interested in sponsoring HackUMass? Email us at <a href="mailto:sponsors@hackumass.com">sponsors&commat;hackumass.com</a>');
+    $scope.sponsorsMega = SponsorsService.getSponsorsMega();
+    $scope.sponsorsGiga = SponsorsService.getSponsorsGiga();
+    $scope.sponsorsTera = SponsorsService.getSponsorsTera();
+    $scope.sponsorsZetta = SponsorsService.getSponsorsZetta();
   }
 ]);

@@ -1,3 +1,3 @@
 'use strict';
 
-var app = angular.module('hackumass-website', ['controllers', 'directives']);
+var app = angular.module('hackumass-website', ['controllers', 'directives', 'services']);

@@ -67,14 +67,63 @@ services.service('FaqService', function($sce){
   };
 });
 
-services.service('SponsorsService', function(){
-  this.getPartnerLogos = function(){
-    return [
-      {
-        link: 'https://mlh.io/',
-	image_url: 'http://static.mlh.io/brand-assets/logo/mlh-logo.png',
-        name: 'Major League Hacking'
-      },
-    ];
-  };
+services.service('PartnersService', function() {
+    this.getPartners = function() {
+        return [
+                   {
+                       partnerURL: 'https://mlh.io/',
+                       partnerLogoURL: 'http://static.mlh.io/brand-assets/logo/mlh-logo.png',
+                       partnerName: 'Major League Hacking'
+                   }
+               ];
+    };
+});
+
+services.service('SponsorsService', function() {
+    this.getSponsorsMega = function() {
+        return [
+                   {
+                       sponsorURL: 'https://www.stickermule.com/',
+                       sponsorLogoURL: 'assets/img/logos/stickermule.png',
+                       sponsorName: 'Stickermule'
+                   },
+                   {
+                       sponsorURL: 'https://www.thalmic.com/',
+                       sponsorLogoURL: 'assets/img/logos/thalmic-labs.jpg',
+                       sponsorName: 'ThalmicLabs'
+                   },
+                   {
+                       sponsorURL: 'https://artistbomb.com/',
+                       sponsorLogoURL: 'assets/img/logos/artist-bomb.jpg',
+                       sponsorName: 'Artist Bomb'
+                   },
+                   {
+                       sponsorURL: 'https://www.udemy.com/',
+                       sponsorLogoURL: 'assets/img/logos/udemy.png',
+                       sponsorName: 'Udemy'
+                   }
+               ];
+    };
+    
+    this.getSponsorsGiga = function() {
+        return [
+        
+               ];
+    };
+    
+    this.getSponsorsTera = function() {
+        return [
+                   {
+                       sponsorURL: 'https://www.fitbit.com/',
+                       sponsorLogoURL: 'assets/img/logos/fitbit.png',
+                       sponsorName: 'FitBit'
+                   }
+               ];
+    };
+    
+    this.getSponsorsZetta = function() {
+        return [
+
+               ];
+    };
 });

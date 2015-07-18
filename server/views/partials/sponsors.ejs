@@ -1,15 +1,57 @@
-<!--Sponsors-->
+<!-- Partners -->
+<section class="alternate text-center sponsors" ng-controller="PartnersCtrl">
+    <h1>{{partnersTitle}}</h1>
+    <div class="logos">
+        <ul class="medium">
+            <li ng-repeat="partner in partners">
+                <a href={{partner.partnerURL}} target="_blank">
+                    <img src={{partner.partnerLogoURL}} alt={{partner.partnerName}} id={{partner.partnerName}}>
+                </a>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<!-- Sponsors -->
 <section class="alternate text-center sponsors" ng-controller="SponsorsCtrl">
-<h1>{{subtitle}}</h1>
-<div class="logos">
-	<ul class="medium">
-		<li ng-repeat="logo in partnerLogos">
-			<a href={{logo.link}} target="_blank">
-				<img src={{logo.image_url}} alt={{logo.name}} id={{logo.name}}>
-			</a>
-		</li>
-	</ul>
-</div>
-<h1>{{title}}</h1>
-<p id="sponsor" ng-bind-html="email"></p>
+    <h1>{{sponsorsTitle}}</h1>
+    <div class="logos">
+    
+        <!-- Zetta Sponsors -->
+        <ul class="xlarge">
+            <li ng-repeat="sponsor in sponsorsZetta">
+                <a href={{sponsor.sponsorURL}} target="_blank">
+                    <img src={{sponsor.sponsorLogoURL}} alt={{sponsor.sponsorName}} id={{sponsor.sponsorName}}>
+                </a>
+            </li>
+        </ul>
+    
+        <!-- Tera Sponsors -->
+        <ul class="large">
+            <li ng-repeat="sponsor in sponsorsTera">
+                <a href={{sponsor.sponsorURL}} target="_blank">
+                    <img src={{sponsor.sponsorLogoURL}} alt={{sponsor.sponsorName}} id={{sponsor.sponsorName}}>
+                </a>
+            </li>
+        </ul>
+    
+        <!-- Giga Sponsors -->
+        <ul class="medium">
+            <li ng-repeat="sponsor in sponsorsGiga">
+                <a href={{sponsor.sponsorURL}} target="_blank">
+                    <img src={{sponsor.sponsorLogoURL}} alt={{sponsor.sponsorName}} id={{sponsor.sponsorName}}>
+                </a>
+            </li>
+        </ul>
+    
+        <!-- Mega Sponsors -->
+        <ul class="small">
+            <li ng-repeat="sponsor in sponsorsMega">
+                <a href={{sponsor.sponsorURL}} target="_blank">
+                    <img src={{sponsor.sponsorLogoURL}} alt={{sponsor.sponsorName}} id={{sponsor.sponsorName}}>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <p id="sponsor" ng-bind-html="sponsorsEmail"></p>
 </section>
